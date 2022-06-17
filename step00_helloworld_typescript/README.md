@@ -1,5 +1,9 @@
 # Next.js Hello World with TypeScript
 
+If you’ve never written React code, you should go through the [React tutorial](https://reactjs.org/tutorial/tutorial.html) first.
+
+If you donot know Typescript go through this [Essential TypeScript 4: From Beginner to Pro book](https://www.oreilly.com/library/view/essential-typescript-4/9781484270110/)
+
 Read Chapter 1 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
 
 To Create Project give the following command:
