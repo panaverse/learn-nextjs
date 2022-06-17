@@ -6,6 +6,8 @@ To Create Project give the following command:
 
 npx create-next-app step00_helloworld_typescript --ts
 
+Lets make the project simple by deleting the api directory, all styles and their imports in pages/_app.tsx, and deleting most of the code in pages/index.tsx include the style imports. Than add a simple hello world div.
+
 To run give the following command:
 
 npm run dev
