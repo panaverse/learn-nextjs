@@ -1,4 +1,4 @@
-# Nested Routing in Next.js 
+# Using route variables inside our pages
 
 Read Pages 37 of Chapter 3 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
 
