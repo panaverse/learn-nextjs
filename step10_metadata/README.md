@@ -1,14 +1,17 @@
-# Images in Next.js 
+# Handling metadata in Next.js 
 
-Read Pages 44-49 of Chapter 3 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
+Read Pages 52-53 of Chapter 3 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
 
-Create pages/index.tsx and add Image component
+Create pages/index.tsx and pages/about.tsx files
 
 npm run dev
 
-Now open the project in the browser:
+Now open the project in the browser, and view source of the page
 
 http://localhost:3000
+
+You can navigate to the about page, and view source of the page
+
 
 
 
