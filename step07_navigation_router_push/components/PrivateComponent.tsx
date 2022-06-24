@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-function PrivateComponent() {
+function PrivateComponent(): JSX.Element {
     return (
         <div>
            This is private component.

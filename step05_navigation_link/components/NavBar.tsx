@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-function Navbar() {
+function Navbar() : JSX.Element{
     return (
         <div>
             <ul>
