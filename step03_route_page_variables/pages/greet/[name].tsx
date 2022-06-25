@@ -12,7 +12,10 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     }
 }
 
-const NamePage: NextPage = (props: GetServerSideProps) => {
+//https://stackoverflow.com/questions/69560905/how-to-type-a-page-component-with-props-in-next-js
+//https://nextjs.org/docs/api-reference/data-fetching/get-initial-props#typescript
+//https://nextjs.org/docs/api-reference/data-fetching/get-server-side-props
+const NamePage: NextPage<GetServerSideProps> = (props: GetServerSideProps) => {
   return (
     <div>
       Hello {props.name}.
