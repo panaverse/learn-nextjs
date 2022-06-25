@@ -1,14 +1,21 @@
 import { useState } from 'react';
 import Head from 'next/head';
+import type { NextComponentType, NextPageContext } from "next";
+
+//https://bestofreactjs.com/repo/avneesh0612-react-nextjs-snippets
+
+interface Props {
+    pageName: string
+};
 
 
-function Widget({pageName}: {pageName: string}) : JSX.Element{
+const Widget: NextComponentType<NextPageContext, {}, Props> = (props: Props) => {
     const [active, setActive] = useState(false);
     if (active) {
         return (
             <>
                 <Head>
-                    <title> You're browsing the {pageName} page</title>
+                    <title> You're browsing the {props.pageName} page</title>
                 </Head>
                 <div>
                     <button onClick={() =>setActive(false)}>Restore original title</button>
@@ -24,4 +31,3 @@ function Widget({pageName}: {pageName: string}) : JSX.Element{
     );
 }
 
-export default Widget;

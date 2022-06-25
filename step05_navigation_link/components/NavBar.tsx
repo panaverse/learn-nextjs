@@ -1,6 +1,11 @@
 import Link from 'next/link';
+import type { NextComponentType, NextPageContext } from "next";
 
-function Navbar() : JSX.Element{
+//https://bestofreactjs.com/repo/avneesh0612-react-nextjs-snippets
+
+interface Props {};
+
+const Navbar : NextComponentType<NextPageContext, {}, Props> = (props: Props) => {
     return (
         <div>
             <ul>
@@ -9,5 +14,5 @@ function Navbar() : JSX.Element{
             </ul>
         </div>
     );
-}
+};
 export default Navbar;
