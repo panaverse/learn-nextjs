@@ -1,6 +1,8 @@
-# Consuming REST APIs on the server side i.e. Server-side rendering (SSR)
+# Consuming REST APIs at Build time i.e. static site generation (SSG)
 
 Read pages 80-89 of Chapter 4 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
+
+Read GetStaticPaths and GetStaticProps official [documentation](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths)
 
 To Create Project give the following command:
 
