@@ -34,7 +34,7 @@ export const getStaticPaths: GetStaticPaths= async () => {
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const username = context.params.username;
+    const username = context!.params!.username;
     const userReq = await axios.get(`${process.env.API_ENDPOINT}/04/users/${username}`,
         {
             headers: {
@@ -68,12 +68,16 @@ interface User {
 
 }
 
+interface Props {
+    user: User;
+}
+
 
 
 //https://stackoverflow.com/questions/69560905/how-to-type-a-page-component-with-props-in-next-js
 //https://nextjs.org/docs/api-reference/data-fetching/get-initial-props#typescript
 //https://nextjs.org/docs/api-reference/data-fetching/get-server-side-props
-const UserPage: NextPage<GetStaticProps> = (props: GetStaticProps) => {
+const UserPage: NextPage<Props> = (props: Props) => {
     const user: User = props.user;
     return (
         <div>
