@@ -11,7 +11,7 @@ interface Props {
 }
     
 
-const PostMeta: NextComponentType<NextPageContext, {}, Props> = (props: Props) => {
+const PostHead: NextComponentType<NextPageContext, {}, Props> = (props: Props) => {
     return (
         <Head>
             <title> {props.title} </title>
@@ -29,4 +29,4 @@ const PostMeta: NextComponentType<NextPageContext, {}, Props> = (props: Props) =
         </Head>
     );
 }
-export default PostMeta;
+export default PostHead;

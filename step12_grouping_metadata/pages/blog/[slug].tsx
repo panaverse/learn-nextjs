@@ -1,5 +1,5 @@
 import PostHead from '../../components/PostHead';
-import {Post} from '../../components/PostHead';
+import {Post}from '../../data/posts';
 import posts from '../../data/posts';
 import { GetServerSideProps } from 'next';
 
@@ -7,7 +7,9 @@ import { GetServerSideProps } from 'next';
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
     const { slug } = context.params;
-    const post: Post = posts.find((p) => p.slug === slug);
+
+    //https://linguinecode.com/post/how-to-solve-typescript-possibly-undefined-value
+    const post: Post = posts.find((p) => p.slug === slug)!;
     return {
         props: {
             post
@@ -15,7 +17,9 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     };
   }
 
-function Post({ post }: Post): JSX.Element {
+
+const MyPost: NextPage<GetServerSideProps> = (props: GetServerSideProps) => {
+const post: Post = props.post;
     return (
         <div>
             <PostHead {...post} />
@@ -25,4 +29,4 @@ function Post({ post }: Post): JSX.Element {
     );
 }
 
-export default Post;
+export default MyPost;
