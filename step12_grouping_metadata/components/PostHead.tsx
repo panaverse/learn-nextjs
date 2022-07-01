@@ -7,7 +7,7 @@ interface Props {
     title: string;
     subtitle: string;
     image: string;
-    description: string;
+    description?: string;
 }
     
 

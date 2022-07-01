@@ -2,11 +2,12 @@ import PostHead from '../../components/PostHead';
 import {Post}from '../../data/posts';
 import posts from '../../data/posts';
 import { GetServerSideProps } from 'next';
+import type { NextPage } from 'next';
 
 
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-    const { slug } = context.params;
+    const { slug } = context.params!;
 
     //https://linguinecode.com/post/how-to-solve-typescript-possibly-undefined-value
     const post: Post = posts.find((p) => p.slug === slug)!;
@@ -18,7 +19,12 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   }
 
 
-const MyPost: NextPage<GetServerSideProps> = (props: GetServerSideProps) => {
+interface Props{
+    post: Post;
+}
+
+
+const MyPost: NextPage<Props> = (props: Props) => {
 const post: Post = props.post;
     return (
         <div>
