@@ -7,16 +7,12 @@ export interface User{
   id: string;
 }
 
-interface Props{
-  users: User[];
-}
 
-
-function List(props: Props) {
+function List({users}: {users: User[]}) {
     return (
       <ul>
       {
-        props.users.map((user) =>
+        users.map((user) =>
           <li key={user.id}>
           <Link href={`/users/${user.username}`} passHref>
             <a> {user.username} </a>
