@@ -1,41 +1,58 @@
 import type { NextPage } from 'next';
-import { useEffect } from 'react';
 import Link from 'next/link';
-import axios from 'axios';
+import { useEffect, useState } from 'react';
 
-//https://nextjs.org/docs/basic-features/typescript
-import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next';
+export interface User{
+  username: string;
+  id: string;
+}
+
+interface Props{
+  users: User[];
+}
 
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  const usersReq = await axios.get('https://api.rwnjs.com/04/users')
-  return {
-    props: {
-      users: usersReq.data
-    }
-  }
+function List(props: Props) {
+    return (
+      <ul>
+      {
+        props.users.map((user) =>
+          <li key={user.id}>
+          <Link href={`/users/${user.username}`} passHref>
+            <a> {user.username} </a>
+          </Link>
+         </li>
+        )
+      }
+       </ul>
+    )
 }
 
 
 
-//https://stackoverflow.com/questions/69560905/how-to-type-a-page-component-with-props-in-next-js
-//https://nextjs.org/docs/api-reference/data-fetching/get-initial-props#typescript
-//https://nextjs.org/docs/api-reference/data-fetching/get-server-side-props
-const Home: NextPage<GetStaticProps> = (props: GetStaticProps) => {
-  let users = props.users;
-  return (
-    <ul>
-    {
-      users.map((user) =>
-        <li key={user.id}>
-          <Link href={`/users/${user.username}`} passHref >
-            <a> {user.username} </a>
-          </Link>
-        </li>
-      )
-    }
-    </ul>
-  )
+
+const Home: NextPage = () => {
+  const [loading, setLoading] = useState<boolean>(true);
+  const [data, setData] = useState<User[]>([]);
+
+  const getUsers = async () => {
+    const req = await fetch('https://api.rwnjs.com/04/users');
+    const users = await req.json();
+    setLoading(false);
+    setData(users);
+  }
+
+   useEffect(() => {
+     getUsers();
+    }, []);
+
+  
+    return (
+      <div>
+        {loading &&<div>Loading users...</div>}
+        {data.length>0 &&<List users={data} />}
+      </div>
+    )
 }
 
 export default Home;

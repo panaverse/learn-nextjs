@@ -1,6 +1,6 @@
 # Consuming REST APIs on Client Side i.e. Client-side rendering (CSR)
 
-Read pages 80-89 of Chapter 4 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
+Read pages 90-99 of Chapter 4 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
 
 To Create Project give the following command:
 
