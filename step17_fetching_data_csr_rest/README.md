@@ -2,9 +2,13 @@
 
 Read pages 90-99 of Chapter 4 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
 
+Read API routes [official documentation](https://nextjs.org/docs/api-routes/introduction)
+
+Also TypeScript [docs](https://nextjs.org/docs/basic-features/typescript#api-routes)
+
 To Create Project give the following command:
 
-Create the pages/index.tsx and pages/users/[username].tsx file
+Create the pages/index.tsx, pages/users/[username].tsx, and pages/api/singleUser.tsx file
 
 npm run dev
 

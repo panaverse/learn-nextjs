@@ -72,20 +72,19 @@ interface Props {
 
 
 const UserPage: NextPage<Props> = (props: Props) => {
-    const auth = props.authorization;
+    const username = props.username;
     const [loading, setLoading] = useState<boolean>(true);
-    const [data, setData] = useState<User | undefined>(undefined);
+    const [data, setData] = useState<User | null>(null);
 
     const getUserData = async () => {
-        const req = await fetch(`https://api.rwnjs.com/04/users/${props.username}`,
-            { headers: { auth } }
-        );
-        const reqData = await req.json();
+        const req = await fetch(`/api/singleUser?username=${username}`);
+        const data = await req.json();
         setLoading(false);
-        setData(reqData);
+        setData(data);
       }
 
     useEffect(() => {
+        //console.log("useEffect Called");
         getUserData();
     }, []);
 
@@ -93,13 +92,14 @@ const UserPage: NextPage<Props> = (props: Props) => {
         <div>
             <div>
                 <Link href="/" passHref>Back to home</Link>
-        </div>
-        <hr />
-        {loading && <div>Loading user data...</div>}
+            </div>
+            <hr />
+            {loading && <div>Loading user data...</div>}
 
-        {data && <UserData user={data} />}
-</div>
-);
+            {data && <UserData user={data} />}
+            
+        </div>
+    );
 }
 
 
