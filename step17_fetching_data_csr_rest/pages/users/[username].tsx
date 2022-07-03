@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import axios from 'axios';
 
@@ -13,47 +13,13 @@ declare var process : {
     }
 }
 
-// pages/users/[username].js
-export const getStaticPaths: GetStaticPaths= async () => {
-    const usersReq = await axios.get('https://api.rwnjs.com/04/users');
-    const users: User[] = usersReq.data;
-
-    const paths = users.map((user) => ({
-        params: {
-            username: user.username
-        }
-    }));
-
-    return {
-        paths,
-        fallback: false
-    };
-    
-}
-
-
-
-export const getStaticProps: GetStaticProps = async (context) => {
-    const username = context.params.username;
-    const userReq = await axios.get(`${process.env.API_ENDPOINT}/04/users/${username}`,
-        {
-            headers: {
-                authorization: process.env.API_TOKEN
-            }
-        }
-    );
-
-    if (userReq.status === 404) {
-        //console.log("ERROR");
-        return {
-            notFound: true,
-        };
-    }
-
+export const getServerSideProps: GetServerSideProps = async (context) => {
+    const { username } = context.query;
     return {
         props: {
-            user: userReq.data
-        }
+            username,
+            authorization: process.env.API_TOKEN
+            }
     };
 }
 
@@ -68,26 +34,15 @@ interface User {
 
 }
 
-
-
-//https://stackoverflow.com/questions/69560905/how-to-type-a-page-component-with-props-in-next-js
-//https://nextjs.org/docs/api-reference/data-fetching/get-initial-props#typescript
-//https://nextjs.org/docs/api-reference/data-fetching/get-server-side-props
-const UserPage: NextPage<GetStaticProps> = (props: GetStaticProps) => {
-    const user: User = props.user;
+function UserData({ user }: {user: User}) {
     return (
-        <div>
-            <div>
-            <Link href="/" passHref>Back to home</Link>
-            </div>
-            <hr />
-            <div style={{ display: 'flex' }}>
-                <img
+        <div style={{ display: 'flex' }}>
+            <img
                 src={user.profile_picture}
                 alt={user.username}
                 width={150}
                 height={150}
-                />
+            />
             <div>
                 <div>
                     <b>Username:</b> {user.username}
@@ -107,14 +62,48 @@ const UserPage: NextPage<GetStaticProps> = (props: GetStaticProps) => {
                 </div>
             </div>
         </div>
-    </div>
-);
-
-
-
-
-
-    
+    )
 }
+
+interface Props {
+    username: string;
+    authorization: string;
+}
+
+
+const UserPage: NextPage<Props> = (props: Props) => {
+    const auth = props.authorization;
+    const [loading, setLoading] = useState<boolean>(true);
+    const [data, setData] = useState<User | undefined>(undefined);
+
+    const getUserData = async () => {
+        const req = await fetch(`https://api.rwnjs.com/04/users/${props.username}`,
+            { headers: { auth } }
+        );
+        const reqData = await req.json();
+        setLoading(false);
+        setData(reqData);
+      }
+
+    useEffect(() => {
+        getUserData();
+    }, []);
+
+    return (
+        <div>
+            <div>
+                <Link href="/" passHref>Back to home</Link>
+        </div>
+        <hr />
+        {loading && <div>Loading user data...</div>}
+
+        {data && <UserData user={data} />}
+</div>
+);
+}
+
+
+
+
 
 export default UserPage;
