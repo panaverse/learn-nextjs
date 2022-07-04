@@ -63,11 +63,18 @@ After showing the data on UI, If we now try to browse the home page, we will see
 Create a simple route for adding a new sign by creating a new page under pages/new-sign.tsx.
 Inside the pages/new-sign.tsx file, import the useMutation hook and ADD_SIGN query from apollo/cleint and lib/apollo/queries folder respectively and use them to call the data. 
 
+```bash
+import { useRouter } from "next/router";
+import { useMutation } from "@apollo/client";
+import ADD_SIGN from "../lib/apollo/queries/addSign";
+
 const [addSign] = useMutation(ADD_SIGN, {
 onCompleted() {
     router.push("/");
     }
 });
+```
+
 
 ## Learn More
 
