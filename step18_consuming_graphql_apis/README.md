@@ -1,18 +1,16 @@
 # Consuming GraphQL APIs on Server Side i.e. server-side rendering (SSR)
 
-Read pages 99-11 of Chapter 4 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
+Read pages 99-111 of Chapter 4 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
 
 To Create Project give the following command:
 
-Create the pages/index.tsx and pages/rocket/[id].tsx file
+Create the pages/index.tsx and pages/new-sign.tsx file
 
 npm run dev
 
 Now open the project in the browser:
 
 http://localhost:3000
-
-
 
 
 
@@ -32,8 +30,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-## Tutorial
-[Getting Started With Apollo Client in Next.js](https://www.apollographql.com/blog/apollo-client/next-js/next-js-getting-started/)
+## Step 1
+Add required dependencies in your project. 
+```bash
+yarn add @apollo/client graphql isomorphic-unfetch
+```
+
 
 
 ## Setup the Graphql Client
