@@ -12,8 +12,6 @@ interface RokcetInterface {
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-
-  
   // console.log("id ", context!.params!.id);
   const rocketId = context!.params!.id;
   const { data } = await client.query<RokcetInterface>({ query: GET_ROCKET, variables: { rocketId } });

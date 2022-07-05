@@ -1,10 +1,8 @@
-# Consuming GraphQL APIs on Server Side i.e. server-side rendering (SSR)
+# Consuming GraphQL APIs on Client Side (An example from book)
 
 Read pages 99-111 of Chapter 4 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
 
-To Create Project give the following command:
-
-Create the pages/index.tsx and pages/new-sign.tsx file
+To run the project locally on your machine, give the following command:
 
 npm run dev
 
@@ -12,18 +10,16 @@ Now open the project in the browser:
 
 http://localhost:3000
 
-
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-
-## Step 1 (Creating a new project)
+## Step 1 (Create a new project)
 Create a new Next project with the following command. 
 ```bash
 npx create-next-app signbook
 ```
+You can aslo add TypeScript to this project by following previous steps. 
 
 ## Step 2 (Addind required dependencies)
 Add required dependencies in your project. 
@@ -31,22 +27,26 @@ Add required dependencies in your project.
 yarn add @apollo/client graphql isomorphic-unfetch
 ```
 
-## Step 3 (Creating an apollo client instance)
-Create an Apollo client for our Next.js application by creating a new file inside lib/apollo/index.js (See example of this project)
+## Step 3 (Setup apollo client)
+Setup Apollo client for our Next.js application by creating a new file inside lib/apollo/index.js (See example of this project)
 
 ## Step 4 (Updating the _app.ts file with ApolloProvider wrapper)
-Moving to you pages/ directory, we can now create a new _app.ts file and wrap the whole app using the official Apollo context provider:
+Moving to you pages/ directory, we can now create a new _app.ts file and wrap Component tag using the official Apollo context provider:
 ```bash
-<ApolloProvider client={apolloClient}>
-    <Component {...pageProps} />
-</ApolloProvider>
+export default function App({ Component, pageProps }: AppProps) {
+  const apolloClient = useApollo(pageProps.initialApolloState);
+  return (
+    <ApolloProvider client={apolloClient}>
+      <Component {...pageProps} />
+    </ApolloProvider>
+  );
 ```
 
 ## Step 5 (Contructing the required queries)
-Create two new files, lib/apollo/queries/getLatestSigns.ts and lib/apollo/queries/addSign.ts and contruct the queries. 
+Create two new files, lib/apollo/queries/getLatestSigns.ts and lib/apollo/queries/addSign.ts and construct the queries. 
 
 ## Step 6 (Fetching the data on client side)
-Inside the pages/index.tsx file, import the useQuery hook and GET_LATEST_SIGNS query from apollo/cleint and lib/apollo/queries folder respectively and use them to call the data.   
+Inside the pages/index.tsx file, import the useQuery hook and GET_LATEST_SIGNS query from "@apollo/cleint" and "lib/apollo/queries" folder respectively and use them to call the data.   
 
 ```bash
 import { useQuery } from "@apollo/client";
@@ -57,11 +57,10 @@ const { loading, data } = useQuery(GET_LATEST_SIGNS, {
 });
 
 ```
-After showing the data on UI, If we now try to browse the home page, we will see a list of signs!
 
 ## Step 7 (Add functionality to add a new sign)
 Create a simple route for adding a new sign by creating a new page under pages/new-sign.tsx.
-Inside the pages/new-sign.tsx file, import the useMutation hook and ADD_SIGN query from apollo/cleint and lib/apollo/queries folder respectively and use them to call the data. 
+Inside the new-sign.tsx file, import the useRouter hook from "next/router" to redirect user to home page once the mutaiton is complete, import useMutation hook and ADD_SIGN query from apollo/cleint and lib/apollo/queries folder respectively and use them to call the data. 
 
 ```bash
 import { useRouter } from "next/router";
@@ -74,7 +73,6 @@ onCompleted() {
     }
 });
 ```
-
 
 ## Learn More
 

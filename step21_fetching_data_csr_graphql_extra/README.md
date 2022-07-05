@@ -1,10 +1,6 @@
 # Consuming GraphQL APIs on Client Side i.e. Client-side rendering (CSR)
 
-Read pages 99-11 of Chapter 4 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
-
-To Create Project give the following command:
-
-Create the pages/index.tsx and pages/rocket/[id].tsx file
+To run Project give the following command:
 
 npm run dev
 
@@ -12,38 +8,74 @@ Now open the project in the browser:
 
 http://localhost:3000
 
-
-
-
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+## Tutorial
+This example is based on this tutorial: [Getting Started With Apollo Client in Next.js](https://www.apollographql.com/blog/apollo-client/next-js/next-js-getting-started/)
+
+
+## Step 1 (Creating a new project)
+Create a new Next project with the following command. 
+```bash
+npx create-next-app rocketslist
+```
+You can aslo add TypeScript to this project by following previous steps. 
+
+## Step 2 (Addind required dependencies)
+Add required dependencies in your project. 
+```bash
+yarn add @apollo/client graphql isomorphic-unfetch
+```
+## Step 3 (Setup apollo client)
+Setup Apollo client for our Next.js application by creating a new file inside lib/apollo/index.js (See example of this project)
+
+## Step 4 (Updating the _app.ts file with ApolloProvider wrapper)
+Moving to you pages/ directory, we can now create a new _app.ts file and wrap the whole app using the official Apollo context provider:
 
 ```bash
-npm run dev
-# or
-yarn dev
+export default function App({ Component, pageProps }: AppProps) {
+  const apolloClient = useApollo(pageProps.initialApolloState);
+  return (
+    <ApolloProvider client={apolloClient}>
+      <Component {...pageProps} />
+    </ApolloProvider>
+  );
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Step 5 (Contructing the required queries)
+Create two new files, lib/apollo/queries/getRockets.ts and lib/apollo/queries/getRocket.ts and contruct the queries. 
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Step 6 (Fetching homepage data on client side)
+Client-side rendering is what we typically do in React apps. The browser requests the app, the page loads, then React requests the data and presents it to the user.
 
-## Setup the Graphql Client
-Make a folder lib/apollo and create an index.ts file and add relavent code to setup the graphql clinet.
-You can use your prefered Graphql API if you wish.
-Then inside the pages/_app.tsx file, initiate the graphql client instance and wrap the component tag with ApolloProvider and pass the client variable. Now all pages of the app can access this and we can use graphQL hook for our queries. 
+Inside the pages/index.tsx file, import useQuery hook and GET_ROCKETS query from "@apollo/client" and "lib/apollo/queries/getRockets" respectively. Finally use the useQuery hook to fetch the data from the api. 
 
-## Write Graphql Queries
-Inside the lib/apollo folder, make a new folder "queries" and add your queries in multiple files with the .ts extention
+```bash
+import { useQuery } from '@apollo/client';
+import GET_ROCKETS from '../lib/apollo/queries/getRockets';
 
-## Fetch all the data on client side
-In the home function, import the useQuery hook from '@apollo/client', and use it by passing your desired query. It will retrun loading, error and data variables. Handing the loading state and show the data on the UI. 
-Then, use Link tag to route the user to sub pages and inside sub page.
-The, use the useRouter hook to get the id and use that id to query the details again. 
+const { loading, data } = useQuery<RocketsInterface>(GET_ROCKETS, {
+    fetchPolicy: 'no-cache',
+});
+```
+
+## Step 7 (Fetching rocket data on client side)
+In the pages folder, create a new folder "rocket" and create a file "[id].tsx". This will act as the route to the detail of any rocket. 
+In the [id].tsx page, import the useRouter hook from 'next/router' and use it to extract the id of the rocket in a query variable. Then import useQuery hook and GET_ROCKET query from '@apollo/client' and 'lib/apollo/queries/getRocket' respectively to call the rocket detail.
+
+```bash
+import { useQuery } from '@apollo/client';
+import GET_ROCKET from '../../lib/apollo/queries/getRocket';
+import { useRouter } from 'next/router';
+
+const { query } = useRouter();
+const { loading, data } = useQuery<RokcetInterface>(GET_ROCKET, {
+    fetchPolicy: 'no-cache',
+    variables: { rocketId: query.id }
+});
+```
 
 ## Learn More
 
