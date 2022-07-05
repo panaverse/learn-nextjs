@@ -31,3 +31,5 @@ const Widget: NextComponentType<NextPageContext, {}, Props> = (props: Props) => 
     );
 }
 
+
+export default Widget
