@@ -17,9 +17,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Step 1 (Create a new project)
 Create a new Next project with the following command. 
 ```bash
-npx create-next-app signbook
+npx create-next-app step18_consuming_graphql_apis --ts
 ```
-You can aslo add TypeScript to this project by following previous steps. 
 
 ## Step 2 (Addind required dependencies)
 Add required dependencies in your project. 
