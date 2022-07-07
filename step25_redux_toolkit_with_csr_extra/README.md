@@ -2,6 +2,8 @@
 
 First understand the [Redux overview and concepts](https://redux.js.org/tutorials/essentials/part-1-overview-concepts)
 
+The Redux team recommends that everyone should use Redux Toolkit, therefore we are not following the plain Redux example of our textbook, but only covering Redux Toolkit from seprate sources.
+
 You can also watch the introductory [Redux Video Tutorial by Zeeshan Hanif](https://github.com/panacloud/bootcamp-2020#part-vi-managing-state-with-redux)
 
 We will follow this [tutorial](https://www.merixstudio.com/blog/introduction-using-redux-toolkit-nextjs-and-typescript/)
