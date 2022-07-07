@@ -18,9 +18,8 @@ This example is based on this tutorial: [Getting Started With Apollo Client in N
 ## Step 1 (Creating a new project)
 Create a new Next project with the following command. 
 ```bash
-npx create-next-app rocketslist
+npx create-next-app step20_fetching_data_ssg_graphql_extra --ts
 ```
-You can aslo add TypeScript to this project by following previous steps. 
 
 ## Step 2 (Addind required dependencies)
 Add required dependencies in your project. 
