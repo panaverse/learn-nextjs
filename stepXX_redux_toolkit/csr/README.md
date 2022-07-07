@@ -15,6 +15,15 @@ yarn add axios
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+
 ## Getting Started
 
 First, run the development server:
@@ -79,17 +88,35 @@ export const counterSlice = createSlice({
         decrement: (state) => {
             state.value -= 1
         },
-        incrementByAmount: (state, action: PayloadAction<number>) => {
+        incrementByAmount: (state, action) => {
             state.value += action.payload
         },
     }
 })
 
-// Action creators are generated for each case reducer function
 export const { increment, decrement, incrementByAmount } = counterSlice.actions
-
 export default counterSlice.reducer
 
+```
+
+```bash
+import { ActionCreator, createSlice, PayloadAction } from '@reduxjs/toolkit'
+
+export const usersSlice = createSlice({
+  name: 'users',
+  initialState,
+  reducers: {
+    addUser: (state, action) => {
+      state.users = [...state.users, action.payload]
+    },
+    removeUser: (state, action) => {
+      state.users = state.users.filter((user: string) => (user !== action.payload))
+    }
+  }
+})
+
+export const { addUser, removeUser } = usersSlice.actions
+export default usersSlice.reducer
 ```
 
 
@@ -97,32 +124,36 @@ export default counterSlice.reducer
 Update the store.ts file which we made in step 1 and pass the rudcer which is exported from counterSlice.ts file. 
 
 ```bash
-import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from '../features/counter/counterSlice'
+import { combineReducers, configureStore } from '@reduxjs/toolkit'
+import users from './usersSlice'
+import counter from './counterSlice'
+
+const combinedReducer = combineReducers({
+  counter,
+  users,
+});
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    reducer: combinedReducer
   },
 })
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
-export type RootState = ReturnType<typeof store.getState>
-// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
-export type AppDispatch = typeof store.dispatch
+export type RootState = ReturnType<typeof store.getState>;
 ```
 
 ## Step 6 (Read and update the state)
 
+
 ```bash
 // Read
 import { useSelector } from 'react-redux'
-
 const {counter} = useSelector((state) => state.counter);
+const { users } = useSelector((state) => state.reducer.users );
 ```
 
 ```bash
-// Update 
+// Update
 
 // import functions
 import { useDispatch } from 'react-redux'
@@ -137,13 +168,6 @@ const dispatch = useDispatch()
 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
