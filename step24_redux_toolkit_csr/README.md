@@ -13,9 +13,6 @@ yarn add @reduxjs/toolkit react-redux
 yarn add axios
 
 
-
-
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -27,6 +24,101 @@ npm run dev
 # or
 yarn dev
 ```
+
+## Step 1 (Add dependencies)
+```bash
+npm install @reduxjs/toolkit react-redux
+```
+
+## Step 2 (Create the store/store.ts file)
+```bash
+import { configureStore } from '@reduxjs/toolkit'
+
+export const store = configureStore({
+  reducer: {},
+})
+
+// Infer the `RootState` and `AppDispatch` types from the store itself
+export type RootState = ReturnType<typeof store.getState>
+// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+export type AppDispatch = typeof store.dispatch
+```
+
+## Step 3 (Wrap the project root with redux Provider)
+Once the store is created, we can make it available to our React components by putting a React-Redux <Provider> around our application in pages/_app.tsx. Import the Redux store we just created, put a <Provider> around your <App>, and pass the store as a prop:
+
+```bash
+import { Provider } from 'react-redux';
+import { store } from '../store/store';
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <Provider store={store}>
+      <Component {...pageProps} />
+    </Provider>
+  )
+}
+
+export default MyApp
+```
+
+
+## Step 4 (Create the store/counterSlice.ts file)
+Redux requires that we write all state updates immutably, by making copies of data and updating the copies. However, Redux Toolkit's createSlice and createReducer APIs use Immer inside to allow us to write "mutating" update logic that becomes correct immutable updates.
+
+```bash
+import { createSlice } from '@reduxjs/toolkit'
+
+export const counterSlice = createSlice({
+  name: 'counter',
+  initialState,
+    reducers: {
+        increment: (state) => {
+        // Redux Toolkit allows us to write "mutating" logic in reducers. It
+        // doesn't actually mutate the state because it uses the Immer library,
+        // which detects changes to a "draft state" and produces a brand new
+        // immutable state based off those changes
+        state.value += 1
+        },
+        decrement: (state) => {
+        state.value -= 1
+        },
+        incrementByAmount: (state, action: PayloadAction<number>) => {
+        state.value += action.payload
+        },
+    }
+})
+
+// Action creators are generated for each case reducer function
+export const { increment, decrement, incrementByAmount } = counterSlice.actions
+
+export default counterSlice.reducer
+
+```
+
+
+
+## Step 5 (Update the store/store.ts file)
+Update the store.ts file which we made in step 1 and pass the rudcer which is exported from counterSlice.ts file. 
+
+```bash
+import { configureStore } from '@reduxjs/toolkit'
+import counterReducer from '../features/counter/counterSlice'
+
+export const store = configureStore({
+  reducer: {
+    counter: counterReducer,
+  },
+})
+
+// Infer the `RootState` and `AppDispatch` types from the store itself
+export type RootState = ReturnType<typeof store.getState>
+// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+export type AppDispatch = typeof store.dispatch
+```
+
+
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
