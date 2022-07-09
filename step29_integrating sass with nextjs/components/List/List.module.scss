@@ -1,0 +1,20 @@
+.listContianer {
+    margin: 10px
+
+}
+
+.list {
+    ul {
+        list-style: disc;
+    }
+
+    li {
+        font-size: larger;
+    }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+}

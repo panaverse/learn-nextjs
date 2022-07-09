@@ -1,0 +1,11 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: rgb(9, 4, 4);
+
+.paragraphContianer {
+    margin: 10px
+}
+
+.paragraph {
+  font: 100% $font-stack;
+  color: $primary-color;
+}

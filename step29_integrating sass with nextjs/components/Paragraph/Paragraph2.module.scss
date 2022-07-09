@@ -1,0 +1,10 @@
+@use './Paragraph.module';
+
+.paragraphContianer {
+  margin: 10px
+}
+
+.paragraph2 {
+  background-color: Paragraph.$primary-color;
+  color: white;
+}

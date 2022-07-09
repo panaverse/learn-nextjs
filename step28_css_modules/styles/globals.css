@@ -1,0 +1,39 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  /* border: 1px solid black; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.textContainer {
+  border: 1px solid rgb(0, 0, 0);
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  font-family: sans-serif
+}
+
+.button {
+  padding: 5px;
+  background-color: rgb(232, 54, 54);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 100px;
+}
+
+.button:hover  {
+  background-color: rgb(116, 229, 116);
+  color: white;
+}

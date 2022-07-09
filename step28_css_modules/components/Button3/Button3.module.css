@@ -1,0 +1,20 @@
+.buttonLocal {
+  padding: 5px;
+  background-color: rgb(63, 69, 232);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 100px;
+}
+
+.composedButton {
+  composes: buttonLocal;
+  background-color: rgb(226, 139, 139);
+  color: white;
+}
+
+.composedButton:hover {
+  background-color: rgb(116, 229, 116);
+  color: white;
+}
