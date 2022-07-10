@@ -18,7 +18,26 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Covered in this step
+
+## What is Sass?
+- Sass stands for Syntactically Awesome Stylesheet
+- Sass is an extension to CSS
+- Sass is a CSS pre-processor
+- Sass is completely compatible with all versions of CSS
+- Sass reduces repetition of CSS and therefore saves time
+- Sass was designed by Hampton Catlin and developed by Natalie Weizenbaum in 2006
+- Sass is free to download and use
+
+## Why Use Sass?
+Stylesheets are getting larger, more complex, and harder to maintain. This is where a CSS pre-processor can help. Sass lets you use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff.
+
+
+## Instasll Sass
+```bash
+    yarn add sass
+```
+
+## Concepts covered in this step
 - Sass variables
 - Mixins
 - Nesting
@@ -33,6 +52,8 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - [Sass Crash Course](https://www.youtube.com/watch?v=Zz6eOVaaelI)
 - [Sass Tutorial for Beginners - CSS With Superpowers](https://www.youtube.com/watch?v=_a5j7KoflTs)
+- [How to Use Sass with CSS Modules in Next.js](https://www.freecodecamp.org/news/how-to-use-sass-with-css-modules-in-next-js/)
+- [Sass in real world](https://anotheruiguy.gitbooks.io/sassintherealworld_book-i/content/handy-tools/setting-global-argument-variables.html)
 
 
 ## Learn More
