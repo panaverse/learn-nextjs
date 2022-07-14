@@ -1,20 +1,16 @@
-import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import { ChakraProvider, extendTheme } from '@chakra-ui/react';
-
-const customTheme = extendTheme({
-  colors: {
-      brand: {
-        100: '#ffebee',
-        200: '#e57373',
-        300: '#f44336',
-        400: '#e53935',
-      },
-    },
-  });
+import { ChakraProvider, Box } from '@chakra-ui/react';
+import TopBar from '../components/TopBar';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <ChakraProvider theme={customTheme}><Component {...pageProps} /></ChakraProvider>
+  return (
+    <ChakraProvider>
+      <TopBar />
+      <Box maxW="container.xl" margin="auto">
+        <Component {...pageProps} />
+      </Box>
+    </ChakraProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;

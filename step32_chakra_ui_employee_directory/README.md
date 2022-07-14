@@ -1,17 +1,21 @@
-# Integrating Chakra UI in Next.js
+# Building an employee directory with Chakra UI and Next.js
 
-Read pages 155-157 Chapter 7 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
+Read pages 160-175 Chapter 7 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
 
-npx create-next-app step30_chakra_ui --ts
+npx create-next-app step32_chakra_ui_employee_directory --ts
 
 yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4 @chakra-ui/icons
 
-Read Official Docs for [custom themes](https://chakra-ui.com/docs/theming/customize-theme)
-
-update pages/_app.tsx and pages/index.tsx
-
+create pages/_document.tsx, update pages/index.tsx and pages/_app.tsx
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Further resources
+- If you want to dig deeper into all the existing components, hooks, and utilities, you can learn more at [Chakra-ui Official Documentation](https://chakra-ui.com).
+- [Chakra-ui Crash Course](https://www.youtube.com/playlist?list=PLDIXF8nb0VG174PlQuej1su71AvR1JHoo)
+- [How to Use Chakra UI with Next.js and React](https://www.freecodecamp.org/news/how-to-use-chakra-ui-with-next-js-and-react/)
+- [Learn Chakra-ui by building a Todo Application](https://www.youtube.com/watch?v=QVnkGqEsbK0)
+
 
 ## Getting Started
 
