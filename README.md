@@ -1,4 +1,4 @@
-# Learn Web 2.0 Cloud Development in Baby Steps
+# Learn Web 2.0 Development in Baby Steps
 
 This repo is part of the [Certified Web 3.0 and Metaverse Developer Training Program](https://www.panaverse.co/)
 
