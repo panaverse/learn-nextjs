@@ -1,0 +1,48 @@
+$primary-color: rgb(252, 143, 143);
+$primary-font: 'Times New Roman', Times, serif;
+
+$secondary-color: rgb(89, 87, 87);
+$seconday-font: "Courier New", Courier, monospace;
+
+$tertiary-color: rgb(238, 253, 25);
+$tertiary-font: Georgia, 'Times New Roman', Times, serif;
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px
+}
+
+.default {
+    padding: 5px;
+    background-color: rgb(0, 255, 47);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+
+    &:hover {
+        background-color: rgb(116, 229, 116);
+    }
+}
+
+.button1 {
+    @extend .default;
+    background-color: $primary-color;
+    font-family: $primary-font;
+
+}
+
+.button2 {
+    @extend .default;
+    background-color: $secondary-color;
+    font-family: $seconday-font;
+}
+
+.button3 {
+    @extend .default;
+    background-color: $tertiary-color;
+    font-family: $tertiary-font
+}

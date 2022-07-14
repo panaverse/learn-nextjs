@@ -1,0 +1,37 @@
+@mixin button($background: rgb(15, 185, 72)) {
+    padding: 5px;
+    background-color: $background;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+
+    &:hover {
+        background-color: rgb(116, 229, 116);
+    }
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px
+}
+
+.default {
+    @include button();
+}
+
+.info {
+    @include button($background: rgb(171, 168, 168));
+}
+
+.alert {
+    @include button($background: DarkRed);
+}
+
+.success {
+    @include button($background: DarkGreen);
+}

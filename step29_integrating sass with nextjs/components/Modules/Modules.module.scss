@@ -1,0 +1,27 @@
+@use './mixins';
+@use './variables';
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px
+}
+
+.default {
+    @include mixins.button();
+}
+
+.info {
+    @include mixins.button($background: variables.$primary-color);
+}
+
+.alert {
+    @include mixins.button($background: variables.$secondary-color);
+}
+
+.success {
+    @include mixins.button($background: variables.$tertiary-color);
+}
+
+
