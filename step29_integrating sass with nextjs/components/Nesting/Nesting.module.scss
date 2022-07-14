@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px
+}
+
+.Btncontainer {
+    .button {
+        background-color: rgb(252, 143, 143);
+        height: 50px;
+        width: 100px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+
+        &:hover {
+            background-color: rgb(116, 229, 116);
+        }
+    }
+
+    &__button {
+        background-color: rgb(238, 253, 25);
+        height: 50px;
+        width: 100px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+
+        &:hover {
+            background-color: rgb(116, 229, 116);
+        }
+    }
+}
+
+.Btncontainer2 {
+    background-color: rgb(252, 143, 143);
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+
+    &.button {
+        background-color: rgb(89, 87, 87);
+    }
+
+    &:hover {
+        background-color: rgb(116, 229, 116);
+    }
+}
+
+.Btncontainer3 {
+
+
+    &:hover {
+        background-color: rgb(116, 229, 116);
+    }
+}
+
+
+
