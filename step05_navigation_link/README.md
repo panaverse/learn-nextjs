@@ -2,7 +2,6 @@
 
 Read Pages 40 (last section) and 41 of Chapter 3 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
 
-Create pages/posts/index.tsx and pages/[date]/[slug].tsx files
 
 npm run dev
 
