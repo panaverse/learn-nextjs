@@ -1,30 +1,31 @@
+import axios from 'axios';
 import type { NextPage } from 'next';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-export interface User{
-  username: string;
-  id: string;
+export interface User {
+  avatar: string;
+  email: string;
+  first_name: string;
+  id: number;
+  last_name: string;
 }
 
-
-function List({users}: {users: User[]}) {
-    return (
-      <ul>
+function List({ users }: { users: User[] }) {
+  return (
+    <ul>
       {
         users.map((user) =>
           <li key={user.id}>
-          <Link href={`/users/${user.username}`} passHref>
-            <a> {user.username} </a>
-          </Link>
-         </li>
+            <Link href={`/users/${user.id}`} passHref>
+              <a> {user.first_name} {user.last_name} </a>
+            </Link>
+          </li>
         )
       }
-       </ul>
-    )
+    </ul>
+  )
 }
-
-
 
 
 const Home: NextPage = () => {
@@ -32,23 +33,23 @@ const Home: NextPage = () => {
   const [data, setData] = useState<User[]>([]);
 
   const getUsers = async () => {
-    const req = await fetch('https://api.rwnjs.com/04/users');
-    const users = await req.json();
+    const usersReq: any = await axios.get('https://reqres.in/api/users');
+    const users = (usersReq.data.data as User[]);
     setLoading(false);
     setData(users);
   }
 
-   useEffect(() => {
-     getUsers();
-    }, []);
+  useEffect(() => {
+    getUsers();
+  }, []);
 
-  
-    return (
-      <div>
-        {loading &&<div>Loading users...</div>}
-        {data.length>0 &&<List users={data} />}
-      </div>
-    )
+
+  return (
+    <div>
+      {loading && <div>Loading users...</div>}
+      {data.length > 0 && <List users={data} />}
+    </div>
+  )
 }
 
 export default Home;
