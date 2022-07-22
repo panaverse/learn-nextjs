@@ -31,7 +31,7 @@ const ProductCard = ({ id, name, price, picture }: Item) => {
                 <div> ${price} per kg </div>
             </div>
 
-            <div style={{display: "flex", justifyContent: "space-evenly" , border: '1px solid black', marginTop: "10px" }}>
+            <div style={{display: "flex", justifyContent: "space-evenly" , border: "1px solid #808080", marginTop: "10px" }}>
                 <button
                     disabled={productAmount === 0}
                     onClick={() => handleAmount('decrement')}>
