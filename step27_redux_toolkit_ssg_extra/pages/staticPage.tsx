@@ -6,8 +6,8 @@ import { addUser } from "../store/usersSlice";
 
 export const getStaticProps: GetStaticProps = wrapper.getStaticProps((store) => () => {
     console.log('Redux state updating on build time');
-    store.dispatch(incrementByAmuont(50))
-    store.dispatch(addUser("Added at built time"))
+    store.dispatch(incrementByAmuont(1))
+    store.dispatch(addUser("SSG is so cool"))
     return { props: {} }
 });
 

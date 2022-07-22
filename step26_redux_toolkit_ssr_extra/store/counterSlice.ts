@@ -25,6 +25,7 @@ export const counterSlice = createSlice({
 
     },
     extraReducers: {
+        // for server side state change
         [HYDRATE]: (state, action) => {
             console.log('HYDRATE', state.counter, action.payload.counter.counter);
             state.counter = state.counter + action.payload.counter.counter

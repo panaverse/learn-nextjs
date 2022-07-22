@@ -21,6 +21,7 @@ export const usersSlice = createSlice({
     }
   },
   extraReducers: {
+    // for server side state change
     [HYDRATE]: (state, action) => {
         console.log('HYDRATE Actioin', action.payload.users.users);
         state.users = [...state.users, ...action.payload.users.users]
