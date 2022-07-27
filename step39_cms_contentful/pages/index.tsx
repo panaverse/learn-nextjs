@@ -8,6 +8,18 @@ interface Props {
   articles: IArticleFields[];
 }
 
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const articles = (
+    await ContentService.instance.getEntriesByType<IArticleFields>("article")
+  ).map((entry) => entry.fields);
+
+  return {
+    props: {
+      articles,
+    },
+  };
+};
+
 const Home: NextPage<Props> = ({ articles }) => (
   <div className={styles.container}>
     <Head>
@@ -43,15 +55,3 @@ const Home: NextPage<Props> = ({ articles }) => (
 );
 
 export default Home;
-
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  const articles = (
-    await ContentService.instance.getEntriesByType<IArticleFields>("article")
-  ).map((entry) => entry.fields);
-
-  return {
-    props: {
-      articles,
-    },
-  };
-};

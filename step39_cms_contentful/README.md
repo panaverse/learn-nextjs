@@ -14,13 +14,13 @@ npm i -D contentful contentful-management contentful-typescript-codegen dotenv
 
 Create a .env file in the root of your project and add the following values:
 
-Space ID: you find the space ID in “Settings > General”
+- Space ID: you find the space ID in “Settings > General”
 
-Access token: go to “Settings > API keys” and add a new API key; get the Content Delivery API - access token
+- Access token: go to “Settings > API keys” and add a new API key; get the Content Delivery API - access token
 
-Management token: go to “Settings > API keys” and switch to the “Content management tokens” tab; generate a personal token and make sure to immediately copy it
+- Management token: go to “Settings > API keys” and switch to the “Content management tokens” tab; generate a personal token and make sure to immediately copy it
 
-Environment: You can set up multiple environments, but this is another story. We use the default for now.
+- Environment: You can set up multiple environments, but this is another story. We use the default for now.
 
 Check .env.example for reference
 
@@ -38,8 +38,6 @@ npm i -D @contentful/rich-text-react-renderer
 Update pages/index.tsx as per the instructions in the article.
 
 Now you can deploy to Netlify or Vercel.
-
-
 
 
 The is the next tutorial in the series [CMS-Driven Content Structure for a Static Next.js Site](https://www.scale.at/blog/cms-driven-content-structure-nextjs)
