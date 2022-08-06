@@ -2,6 +2,12 @@
 
 Read pages 155-157 Chapter 7 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
 
+You should go through these tutorials:
+
+[Learn how to use Chakra UI like a Pro](https://www.chakrauiforbeginners.com/)
+
+[Build a Modern User Interface with Chakra UI](https://egghead.io/courses/build-a-modern-user-interface-with-chakra-ui-fac68106)
+
 npx create-next-app step30_chakra_ui --ts
 
 yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4 @chakra-ui/icons
