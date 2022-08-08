@@ -9,3 +9,10 @@
 [The starter project for this tutorial](https://github.com/prisma/blogr-nextjs-prisma/tree/main)
 
 [The final project for this tutorial](https://github.com/prisma/blogr-nextjs-prisma/tree/final)
+
+
+Additional Resources:
+
+[Static Sites with Next.js and Prisma](https://leerob.io/blog/next-prisma)
+
+[Other Prisma Examples](https://github.com/prisma/prisma-examples)
