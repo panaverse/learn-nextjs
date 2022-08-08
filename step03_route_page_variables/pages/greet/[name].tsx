@@ -4,8 +4,8 @@ import type { NextPage } from 'next';
 import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next';
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const { name } = context.params;
-    return {
+  const { name } = context.params!;
+  return {
         props: {
             name
         }

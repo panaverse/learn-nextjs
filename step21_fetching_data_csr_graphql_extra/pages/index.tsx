@@ -35,7 +35,7 @@ function HomePage() {
         {data?.rockets.map((rocket, index) => (
           <div key={index} style={{cursor: "pointer"}}>
             <Link href={`/rocket/${rocket.id}`} passHref >
-                <div > {index + 1 }: {rocket.name} </div>
+              <p> {index + 1 }: <a style={{textDecoration: "underline"}}> {rocket.name} </a> </p>
             </Link>
           </div>
         ))}

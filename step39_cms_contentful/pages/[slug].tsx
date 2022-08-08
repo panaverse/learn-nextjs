@@ -9,6 +9,36 @@ interface Props {
   article: IArticleFields;
 }
 
+export const getStaticPaths: GetStaticPaths = async () => {
+
+  const articles = await ContentService.instance.getEntriesByType<IArticleFields>("article");
+  const paths = articles.map((article) => ({
+    params: {
+      slug: article.fields.slug,
+    },
+  }))
+
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps<Props, { slug: string }> = async (ctx) => {
+  const { slug } = ctx.params!;
+  const article = await ContentService.instance.getArticleBySlug(slug);
+
+  if (!article) {
+    return { notFound: true };
+  }
+
+  return {
+    props: {
+      article: article.fields,
+    },
+  };
+};
+
 const Article: NextPage<Props> = ({
   article: { title, description, publishDate, content },
 }) => (
@@ -32,33 +62,3 @@ const Article: NextPage<Props> = ({
 
 export default Article;
 
-export const getStaticProps: GetStaticProps<Props, { slug: string }> = async (
-  ctx,
-) => {
-  const { slug } = ctx.params!;
-  const article = await ContentService.instance.getArticleBySlug(slug);
-
-  if (!article) {
-    return { notFound: true };
-  }
-
-  return {
-    props: {
-      article: article.fields,
-    },
-  };
-};
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  const articles =
-    await ContentService.instance.getEntriesByType<IArticleFields>("article");
-
-  return {
-    paths: articles.map((article) => ({
-      params: {
-        slug: article.fields.slug,
-      },
-    })),
-    fallback: false,
-  };
-};
