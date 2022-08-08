@@ -22,7 +22,7 @@ npx prisma init
 
 [Read the Docs: 5 ways to host database](https://www.prisma.io/dataguide/postgresql/5-ways-to-host-postgresql)
 
-First create a app on [Heroku](https://elements.heroku.com/addons/heroku-postgresql) and then create two Free PostgreSQL Databases
+First create a app on [Heroku](https://dev.to/prisma/how-to-setup-a-free-postgresql-database-on-heroku-1dc1) and then create two Free PostgreSQL Databases
 
 The first database is to store the data, the second instance is a shadow database only used in development.
 
