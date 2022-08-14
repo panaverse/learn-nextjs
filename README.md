@@ -17,6 +17,10 @@ The Web 2.0 full stack applicatios are build using these technologies:
 
 This Web 2.0 stack can be easily extended to develop Web 3.0 Dapps using these technologies:
 
+### [Solidity Learning Repo](https://github.com/panacloud-modern-global-apps/defi-dapps-solidity-smart-contracts)
+
+### [Dapp using Next.js Learning Repo](https://github.com/panacloud-modern-global-apps/dapps-nextjs)
+
 1. [Ethereum Blockchain](https://ethereum.org/en/)
 2. [Solidity Smart Contract Programming Language](https://docs.soliditylang.org/)
 3. [OpenZepllin Smart Contracts](https://www.openzeppelin.com/contracts)
