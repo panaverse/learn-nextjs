@@ -19,3 +19,10 @@ Build this apps using Next.js, Strapi, and Typescript:
 [Step-by-step guide for deploying a Strapi project on Heroku](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment/hosting-guides/heroku.html)
 
 [Deploying a Strapi API on Heroku in 5 min](https://strapi.io/blog/deploying-a-strapi-api-on-heroku)
+
+
+Book References:
+
+[Strapi and Next.js](https://www.theseus.fi/bitstream/handle/10024/751348/Pinnis_Niko.pdf)
+
+[Designing Web APIs with Strapi](https://www.packtpub.com/product/designing-web-apis-with-strapi/9781800560635)
