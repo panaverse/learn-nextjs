@@ -14,6 +14,8 @@ Build this apps using Next.js, Strapi, and Typescript:
 
 [How to Build a Product Information Manager Using Strapi](https://strapi.io/blog/how-to-build-a-product-information-manager-using-strapi)
 
+[Strapi TypeScript Development](https://docs.strapi.io/developer-docs/latest/development/typescript.html)
+
 ### Deployment
 
 [Deployment](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html)
