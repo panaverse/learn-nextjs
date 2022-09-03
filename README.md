@@ -1,7 +1,6 @@
 # Learn Modern Web Development in Baby Steps
 
 The stack used in this learning repo, it is a mixture of [Jamstack](https://jamstack.org/) and [T3](https://create.t3.gg/) Stacks:
-
 [TypeScript](https://www.typescriptlang.org/)
 [Next.js](https://nextjs.org/)
 [Chakra UI](https://chakra-ui.com/)
