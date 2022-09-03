@@ -3,15 +3,10 @@
 The stack used in this learning repo, it is a mixture of [Jamstack](https://jamstack.org/) and [T3](https://create.t3.gg/) Stacks:
 
 [TypeScript](https://www.typescriptlang.org/)
-
 [Next.js](https://nextjs.org/)
-
 [Chakra UI](https://chakra-ui.com/)
-
 [tRPC](https://trpc.io/)
-
 [Prisma](https://www.prisma.io/)
-
 [Strapi](https://strapi.io/)
 
 
