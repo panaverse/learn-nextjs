@@ -2,7 +2,7 @@
 
 If you’ve never written React code, you should go through the [React recorded classes](https://github.com/panacloud/bootcamp-2020#part-i-front-end-fundamentals-with-react) first. Please cover classes 1-8.
 
-If you donot know Typescript go through this [Essential TypeScript 4: From Beginner to Pro book](https://www.oreilly.com/library/view/essential-typescript-4/9781484270110/). You can also watch the classed 14, 15, and 16 from [here](https://github.com/panacloud/bootcamp-2020#part-ii-programming-with-typescript)
+If you donot know Typescript go through this [Essential TypeScript 4: From Beginner to Pro book](https://www.oreilly.com/library/view/essential-typescript-4/9781484270110/). You can also watch the classes 14, 15, and 16 from [here](https://github.com/panacloud/bootcamp-2020#part-ii-programming-with-typescript)
 
 Read Chapter 1 of the [Real World Next.js](https://www.packtpub.com/product/real-world-next-js/9781801073493)
 
