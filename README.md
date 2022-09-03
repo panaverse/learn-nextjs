@@ -59,7 +59,7 @@ This Web 2.0 stack can be easily extended to develop Web 3.0 Dapps using these t
 
 For more details check out the [Panacloud Web 3 Learning Repo](https://github.com/panacloud-modern-global-apps/defi-dapps-solidity-smart-contracts)
 
-The Web 2.0 and Web 3.0 stacks can easily be extended to develop Metaverse experiences. The backend will remain more less the same, the front-end will move towards 3D from 2D:
+The Web 2.0 and Web 3.0 stacks can easily be extended to develop Metaverse experiences. The backend will remain more less the same, the front-end will move towards 3D from 2D using [Web Technologies](https://github.com/panaverse/metaverse-web):
 
 1. [Three.js](https://threejs.org/)
 2. [WebGPU](https://developer.chrome.com/en/docs/web-platform/webgpu/)
