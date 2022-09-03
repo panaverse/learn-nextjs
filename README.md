@@ -8,8 +8,9 @@ The stack used in this learning repo, it is a mixture of [Jamstack](https://jams
 [Prisma](https://www.prisma.io/), and
 [Strapi](https://strapi.io/)
 
-
 This repo is part of the [Certified Web 3.0 and Metaverse Developer Training Program](https://www.panaverse.co/)
+
+Before start learning from this repo, learn TypeScript by doing these [TypeScript Node.js Projects](https://github.com/panacloud-modern-global-apps/chakra-nextjs-projects)
 
 After completing this repo you should move to these specialized Web 3 learning repos:
 
@@ -60,7 +61,8 @@ For more details check out the [Panacloud Web 3 Learning Repo](https://github.co
 
 The Web 2.0 and Web 3.0 stacks can easily be extended to develop Metaverse experiences. The backend will remain more less the same, the front-end will move towards 3D from 2D:
 
-1. [Unity 3D XR Development Platform](https://docs.unity3d.com/Manual/XR.html)
-2. [C# for Unity XR Programming](https://docs.unity3d.com/Manual/ScriptingSection.html)
+1. [Three.js](https://threejs.org/)
+2. [WebGPU](https://developer.chrome.com/en/docs/web-platform/webgpu/)
+3. [WebXR](https://immersiveweb.dev/)
 
 
