@@ -1,4 +1,19 @@
-# Learn Web 2.0 Development in Baby Steps
+# Learn Modern Web Development in Baby Steps
+
+The stack used in this learning repo, it is a mixture of [Jamstack](https://jamstack.org/) and [T3](https://create.t3.gg/) Stacks:
+
+[TypeScript](https://www.typescriptlang.org/)
+
+[Next.js](https://nextjs.org/)
+
+[Chakra UI](https://chakra-ui.com/)
+
+[tRPC](https://trpc.io/)
+
+[Prisma](https://www.prisma.io/)
+
+[Strapi](https://strapi.io/)
+
 
 This repo is part of the [Certified Web 3.0 and Metaverse Developer Training Program](https://www.panaverse.co/)
 
@@ -29,11 +44,6 @@ The Web 2.0 full stack applicatios are build using these technologies:
 1. [Typescript Programming Language for Front-end and Backend Development](https://www.typescriptlang.org/)
 2. [Visual Studio Code Editor](https://code.visualstudio.com/)
 3. [Front-end Web 2.0 Development Using Next.js](https://nextjs.org/)
-4. [Infrastructure as Code using AWS Cloud Development Kit](https://aws.amazon.com/cdk/)
-5. [AWS Lambda for Serverless Computing](https://aws.amazon.com/lambda/)
-6. [Panacloud CLI for API Development](https://www.npmjs.com/package/@panacloud/cli)
-7. [Amazon Aurora Serverless v2 PostgreSQL 13-compatible edition](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html)
-
 
 This Web 2.0 stack can be easily extended to develop Web 3.0 Dapps using these technologies:
 
