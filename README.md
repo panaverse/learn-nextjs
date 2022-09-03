@@ -60,7 +60,8 @@ For more details check out the [Panacloud Web 3 Learning Repo](https://github.co
 
 The Web 2.0 and Web 3.0 stacks can easily be extended to develop Metaverse experiences. The backend will remain more less the same, the front-end will move towards 3D from 2D:
 
-1. [Unity 3D XR Development Platform](https://docs.unity3d.com/Manual/XR.html)
-2. [C# for Unity XR Programming](https://docs.unity3d.com/Manual/ScriptingSection.html)
+1. [Three.js](https://threejs.org/)
+2. [WebGPU](https://developer.chrome.com/en/docs/web-platform/webgpu/)
+3. [WebXR](https://immersiveweb.dev/)
 
 
