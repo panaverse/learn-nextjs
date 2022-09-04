@@ -16,6 +16,8 @@ Build this apps using Next.js, Strapi, and Typescript:
 
 [Strapi TypeScript Development](https://docs.strapi.io/developer-docs/latest/development/typescript.html)
 
+[Strapi v4.3 with TypeScript support, Media library folders and more is live](https://strapi.io/blog/strapi-v4.3-with-typescript-and-media-library-folders-is-live)
+
 ### Deployment
 
 [Deployment](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html)
