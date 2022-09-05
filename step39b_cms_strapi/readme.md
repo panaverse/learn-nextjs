@@ -2,6 +2,8 @@
 
 [About Strapi](https://techcrunch.com/2022/06/22/strapi-lands-31m-for-its-headless-cms-platform/)
 
+[Exploring Headless CMS](https://blog.tarkalabs.com/exploring-headless-cms-f94466b765a2)
+
 [Static Website vs. Dynamic Website](https://strapi.io/blog/static-website-vs-dynamic-website)
 
 [Getting Started with Next.js and Strapi](https://docs.strapi.io/developer-docs/latest/developer-resources/content-api/integrations/next-js.html)
