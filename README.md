@@ -32,6 +32,8 @@ Learn Chakra UI by doing Projects:
 
 [Jamstack agency founder on the rise of Next.js and Vercel](https://sacra.com/research/jamstack-agency-founder-nextjs-vercel/)
 
+[Exploring Headless CMS](https://blog.tarkalabs.com/exploring-headless-cms-f94466b765a2)
+
 In this course repo we will learn Web 2.0 cloud development using the latest state of the art stack. Using this stack you will be able to develop SaaS applications that scale instantly to support even the most demanding applications, while at the same time delivering up to 90% cost savings. This stack is ideal for a broad set of applications. For example, enterprises that have hundreds of thousands of applications, or software as a service (SaaS) vendors that have multi-tenant environments with hundreds or thousands of databases, can use this stack across the entire enterprise. This stack also provides the foundations for developing Web 3.0 applications and Metaverse experiences.
 
 The Web 2.0 full stack applicatios are build using these technologies:
