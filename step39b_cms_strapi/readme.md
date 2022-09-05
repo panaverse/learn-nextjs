@@ -1,8 +1,8 @@
 # Build a blog with Next and Strapi
 
-[About Strapi](https://techcrunch.com/2022/06/22/strapi-lands-31m-for-its-headless-cms-platform/)
-
 [Exploring Headless CMS](https://blog.tarkalabs.com/exploring-headless-cms-f94466b765a2)
+
+[About Strapi](https://techcrunch.com/2022/06/22/strapi-lands-31m-for-its-headless-cms-platform/)
 
 [Static Website vs. Dynamic Website](https://strapi.io/blog/static-website-vs-dynamic-website)
 
