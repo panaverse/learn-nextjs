@@ -1,5 +1,7 @@
 # Next.js With TypeScript and Contentful
 
+[Exploring Headless CMS](https://blog.tarkalabs.com/exploring-headless-cms-f94466b765a2)
+
 We are going to follow this tutorial: [A Static Website Dream Team: Next.js With TypeScript, Contentful, and Netlify](https://www.scale.at/blog/static-website-nextjs-typescript-contentful)
 
 npx create-next-app step39_cms_contentful --ts
