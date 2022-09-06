@@ -24,9 +24,15 @@ Now go to the Next.js project directory and give the following command to deploy
 
 vercel 
 
+[CLI Docs](https://vercel.com/docs/cli)
+
 ## Project config with vercel.json
 
 [vercel.json](https://vercel.com/docs/project-configuration)
+
+[example](https://github.com/grand-stack/grand-stack-starter/blob/master/vercel.json)
+
+[Rewrite Example](https://stackoverflow.com/questions/73607646/problems-mounting-a-vercel-nextjs-project-as-a-subdirectory-of-a-different-verce)
 
 
 
