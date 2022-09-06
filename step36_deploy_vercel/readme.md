@@ -16,6 +16,8 @@ As you can see you they are two ways to deploy to Vercel Cloud:
 
 Now evertime you will make a commit and push it to Github it will be deployed.
 
+[How to set up Continuous Deployment for NodeJS Projects using Vercel](https://blog.devgenius.io/how-to-set-up-continuous-deployment-for-nodejs-projects-using-vercel-514878d3f52a)
+
 ## Manual Deployment through [CLI](https://vercel.com/cli)
 
 npm i -g vercel
