@@ -24,5 +24,9 @@ Now go to the Next.js project directory and give the following command to deploy
 
 vercel 
 
+## Project config with vercel.json
+
+[vercel.json](https://vercel.com/docs/project-configuration)
+
 
 
