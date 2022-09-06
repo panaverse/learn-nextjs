@@ -1,5 +1,7 @@
 # Object-Relational Mapping using Prisma
 
+[Databases in Next.js](https://vercel.com/docs/concepts/solutions/databases)
+
 Prisma is a Next-generation ORM for Node.js & TypeScript. You can connect to PostgreSQL, MySQL, MariaDB, SQL Server, SQLite, MongoDB and CockroachDB.
 
 [What Is Prisma?](https://www.prisma.io/docs/concepts/overview/what-is-prisma)
