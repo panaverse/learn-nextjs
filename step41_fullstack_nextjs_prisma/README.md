@@ -8,6 +8,8 @@
 
 [The starter project for this tutorial](https://github.com/prisma/blogr-nextjs-prisma/tree/main)
 
+[How To Design A Relational Database Schema](https://levelup.gitconnected.com/how-to-design-a-relational-database-schema-1f0ee48d4567)
+
 [The final project for this tutorial](https://github.com/prisma/blogr-nextjs-prisma/tree/final)
 
 
