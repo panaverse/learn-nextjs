@@ -17,7 +17,7 @@ The stack used in this learning repo, it is a mixture of [Jamstack](https://jams
 
 This repo is part of the [Certified Web 3.0 and Metaverse Developer Training Program](https://www.panaverse.co/)
 
-Before start learning from this repo, [learn TypeScript](https://github.com/panacloud-modern-global-apps/learn-typescript) and by doing these [TypeScript Node.js Projects](https://github.com/panacloud-modern-global-apps/chakra-nextjs-projects)
+Before start learning from this repo, [learn TypeScript](https://github.com/panacloud-modern-global-apps/learn-typescript) and by doing these [TypeScript Node.js Projects](https://github.com/panacloud-modern-global-apps/typescript-node-projects)
 
 After completing this repo you should move to these specialized Web 3 learning repos:
 
