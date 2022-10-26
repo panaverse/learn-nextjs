@@ -1,5 +1,9 @@
 # Learn Modern Web Development using Next.js 13 in Baby Steps
 
+Next.js Conf Keynote Announcing Version 13:
+
+https://www.youtube.com/watch?v=NiknNI_0J48
+
 The stack used in this learning repo, it is a mixture of [Jamstack](https://jamstack.org/) and [T3](https://create.t3.gg/) Stacks:
 [TypeScript](https://www.typescriptlang.org/),
 [Next.js 13](https://nextjs.org/blog/next-13),
