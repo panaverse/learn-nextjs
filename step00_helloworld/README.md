@@ -4,6 +4,8 @@
 
 [Download and Install VS Code](https://code.visualstudio.com/download)
 
+[Check out the Next.js 13 Docs](https://beta.nextjs.org/docs)
+
 Open the Command Line and create the project by give this command:
 
         npx create-next-app@latest --experimental-app
