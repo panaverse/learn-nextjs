@@ -12,15 +12,21 @@ Change to project directory:
 
         cd step00_helloworld
 
-Edit app/page.tsx and add the "Hello World from Panaverse DAO"
+In the app directory delete everything except page.tsx
+
+Edit app/page.tsx and make a very simple hello world React component in the file. Note that it is a convention in Next.js that the html page in the director is called page.tsx
 
 Start the Server:
 
         npm run dev
 
+Note that the development server created a layout.tsx file by itself. This means the Next.js requires that there must be RootLayout component in the app folder for the app to function.
+
 Open the Browser:
 
         http://localhost:3000/
+
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
