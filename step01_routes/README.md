@@ -1,37 +1,39 @@
-# Next.js 13 Hello World
+# Next.js 13 Routes
 
-[Download and Install Node.js LTS Version](https://nodejs.org/en/download/)
+[Read the routing fundamentals docs](https://beta.nextjs.org/docs/routing/fundamentals)
 
-[Download and Install VS Code](https://code.visualstudio.com/download)
+In Next.js 13 folders are used to define routes. A route is a single path of nested folders, following the hierarchy from the root folder down to a final leaf folder.
 
-[Check out the Next.js 13 Docs](https://beta.nextjs.org/docs)
+Files are used to create UI that is shown for the route segment.
 
-Open the Command Line and create the project by give this command:
+To create a route you can create a folder in the app directory. For example, you can add app/name director with its page.tsx file.
 
-        npx create-next-app@latest --experimental-app
+To create a nested route, you can nest folders inside each other. For example, you can add a new app/name/address route by nesting two new folders in the app directory.
 
-Change to project directory:
+The /name/address route is composed of three segments:
 
-        cd step00_helloworld
+/ (Root segment)
 
-The app directory is where you define routes, create UI and colocate files such as components, tests, or stylesheets.
+name (Segment)
 
-In the app directory delete everything except page.tsx
+address (Leaf segment)
 
-Edit app/page.tsx and make a very simple hello world React component in the file. Note that it is a convention in Next.js that the html page in the director is called page.tsx
+
+Now lets test this, take the code in step00 and create a directory app/name and a page.tsx file in it. 
+
+Edit app/name/page.tsx and make a very simple React component in the file. Note that it is a convention in Next.js that the page in the director is called page.tsx
+
+Also create a directory app/name/address and a page.tsx file in it. 
 
 Start the Server:
 
         npm run dev
 
-Note that the development server created a layout.tsx file by itself. This means the Next.js requires that there must be RootLayout component in the app folder for the app to function.
-
-The app/layout.tsx and app/page.tsx files will be rendered when the user visits the root of your application.
-
 Open the Browser:
 
-        http://localhost:3000/
+        http://localhost:3000/name
 
+        http://localhost:3000/name/address
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
