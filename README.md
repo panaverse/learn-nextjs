@@ -11,8 +11,9 @@ The stack used in this learning repo, it is a mixture of [Jamstack](https://jams
 [Next.js 13](https://nextjs.org/blog/next-13),
 [Chakra UI](https://chakra-ui.com/),
 [tRPC](https://trpc.io/),
-[Prisma](https://www.prisma.io/), and
-[Strapi](https://strapi.io/)
+[Prisma](https://www.prisma.io/),
+[Strapi](https://strapi.io/),
+[CockroachDB serverless](https://www.cockroachlabs.com/blog/announcing-cockroachdb-serverless/) (SQL), and [MongoDB Atlas](https://www.mongodb.com/atlas/database) (NoSQL).
 
 This repo is part of the [Certified Web 3.0 and Metaverse Developer Training Program](https://www.panaverse.co/)
 
