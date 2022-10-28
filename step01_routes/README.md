@@ -41,7 +41,7 @@ Unlike previous versions of Next.js which used client-side routing, the router i
 
 Must Watch [The Future of the Web: From Cloud to Edge](https://www.youtube.com/watch?v=HlXLVb3QCvQ)
 
-Note that all components inside the app directory are React Server Components by default, including special files and colocated components. This allows you to automatically adopt Server Components with no extra work, and achieve great performance out of the box.
+Note that all components inside the app directory are [React Server Components](https://www.plasmic.app/blog/how-react-server-components-work) by default, including special files and colocated components. This allows you to automatically adopt Server Components with no extra work, and achieve great performance out of the box.
 
 
 
