@@ -10,6 +10,8 @@ Open the Command Line and create the project by give this command:
 
         npx create-next-app@latest --experimental-app
 
+Note that the project uses TypeScript by default.
+
 Change to project directory:
 
         cd step00_helloworld
