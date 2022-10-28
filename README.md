@@ -4,6 +4,8 @@ Next.js Conf Keynote Announcing Version 13:
 
 [<img src="next13.png" width="75%">](https://www.youtube.com/watch?v=NiknNI_0J48 "Keynote Next.js 13")
 
+[The Future of the Web: From Cloud to Edge](https://www.youtube.com/watch?v=HlXLVb3QCvQ)
+
 ### [Next.js 13 Beta Docs](https://beta.nextjs.org/docs/getting-started)
 
 The stack used in this learning repo, it is a mixture of [Jamstack](https://jamstack.org/) and [T3](https://create.t3.gg/) Stacks:

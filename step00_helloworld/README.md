@@ -30,6 +30,10 @@ Note that the development server created a layout.tsx file by itself. This means
 
 The app/layout.tsx and app/page.tsx files will be rendered when the user visits the root of your application.
 
+The file app/layout.tsx is used to define UI that is shared across multiple pages. A layout accepts another layout or a page as its child. You can nest layouts to create nested routes.
+
+The file app/page.tsx is used to define the unique UI of a route. Pages represent the leaf of the route and are needed for the path to be accessible.
+
 Open the Browser:
 
         http://localhost:3000/
