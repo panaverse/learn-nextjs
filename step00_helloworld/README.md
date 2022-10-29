@@ -1,6 +1,6 @@
 # Next.js 13 Hello World
 
-Before starting to learn Next.js, we suggest that get a basic understanding of [React from here](https://beta.reactjs.org/learn). You can also learn from this 2 hour and 35 min [Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react). If you’ve never written React code, you may also go through [our React recorded classes](https://github.com/panacloud/bootcamp-2020#part-i-front-end-fundamentals-with-react) and cover classes 1-8.
+Next.js is built on top of React. Therefore, before starting to learn Next.js, we suggest that you get a basic understanding of [React from latest official docs](https://beta.reactjs.org/learn). You can also learn from this 2 hour and 35 min [Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react). If you’ve never written React code, you may also go through [our React recorded classes](https://github.com/panacloud/bootcamp-2020#part-i-front-end-fundamentals-with-react) and cover classes 1-8.
 
 [Download and Install Node.js LTS Version](https://nodejs.org/en/download/)
 
