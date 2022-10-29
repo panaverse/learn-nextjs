@@ -6,6 +6,8 @@ Next.js Conf Keynote Announcing Version 13:
 
 [The Future of the Web: From Cloud to Edge](https://www.youtube.com/watch?v=HlXLVb3QCvQ)
 
+[Next.js 13 and Chakra UI](https://twitter.com/Panaverse_edu/status/1585258960629956608)
+
 ### [Next.js 13 Beta Docs](https://beta.nextjs.org/docs/getting-started)
 
 The stack used in this learning repo, it is a mixture of [Jamstack](https://jamstack.org/) and [T3](https://create.t3.gg/) Stacks:
