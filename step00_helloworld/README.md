@@ -1,5 +1,7 @@
 # Next.js 13 Hello World
 
+Before starting to learn Next.js, we suggest that get a basic understanding of [React from here](https://beta.reactjs.org/learn). You can also learn from this 2 hour and 35 min [Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react). If you’ve never written React code, you may also go through [our React recorded classes](https://github.com/panacloud/bootcamp-2020#part-i-front-end-fundamentals-with-react) and cover classes 1-8.
+
 [Download and Install Node.js LTS Version](https://nodejs.org/en/download/)
 
 [Download and Install VS Code](https://code.visualstudio.com/download)
