@@ -12,7 +12,7 @@ Open the Command Line and create the project by give this command:
 
         npx create-next-app@latest --experimental-app
 
-Note that the project uses TypeScript by default.
+Note that the project uses [TypeScript by default](https://beta.nextjs.org/docs/configuring/typescript).
 
 Change to project directory:
 
