@@ -15,7 +15,7 @@ export default function GiveName({ params, searchParams }: {
     return (
       <div>
             My name is {params.name}.
-            <p>{searchParams.id}</p>
+            
       </div>
     )
   }
