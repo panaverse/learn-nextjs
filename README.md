@@ -1,6 +1,6 @@
 # Learn Modern Web Development using Next.js 13 in Baby Steps
 
-Next.js Conf Keynote Announcing Version 13:
+Next.js Conf Keynote Announcing Version 13 :
 
 [<img src="next13.png" width="75%">](https://www.youtube.com/watch?v=NiknNI_0J48 "Keynote Next.js 13")
 
