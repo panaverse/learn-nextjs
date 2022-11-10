@@ -1,3 +1,3 @@
 # Chakra UI with Next.js 13
 
-[Chakra UI on Next 13 app directory not possible right now](https://twitter.com/Panaverse_edu/status/1585258960629956608)
+[Chakra UI with Next 13 app directory](https://twitter.com/abhwshek/status/1589205671077380097)
