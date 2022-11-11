@@ -6,6 +6,7 @@
 
 [Watch Tailwind CSS Full Course for Beginners](https://www.youtube.com/watch?v=lCxcTsOHrjo)
 
+
 [Business Landing Page using NextJs 13 & Tailwind CSS from scratch](https://www.youtube.com/watch?v=6mQ3M1CUGnk)
 
 
