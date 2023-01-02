@@ -2,7 +2,7 @@
 
 [Jamstack agency founder on the rise of Next.js and Vercel](https://sacra.com/research/jamstack-agency-founder-nextjs-vercel/)
 
-[Login to Vercel throught Github](https://vercel.com/login)
+[Login to Vercel through Github](https://vercel.com/login)
 
 [Read this Document](https://vercel.com/guides/deploying-nextjs-with-vercel)
 

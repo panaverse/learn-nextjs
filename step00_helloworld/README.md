@@ -1,18 +1,14 @@
 # Next.js 13 Hello World
 
-Next.js is built on top of React. Therefore, before starting to learn Next.js, we suggest that you get a basic understanding of [React from latest official docs](https://beta.reactjs.org/learn). You can also learn from this 2 hour and 35 min [Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react). If you’ve never written React code, you may also go through [our React recorded classes](https://github.com/panacloud/bootcamp-2020#part-i-front-end-fundamentals-with-react) and cover classes 1-8.
-
 [Download and Install Node.js LTS Version](https://nodejs.org/en/download/)
 
 [Download and Install VS Code](https://code.visualstudio.com/download)
 
-[Check out the Next.js 13 Docs](https://beta.nextjs.org/docs)
+[Check out the Next.js 13 Installation Docs](https://beta.nextjs.org/docs/installation)
 
-Open the Command Line and create the project by give this command:
+Open the Command Line and create the Typescript project by give this command:
 
         npx create-next-app@latest --experimental-app
-
-Note that the project uses [TypeScript by default](https://beta.nextjs.org/docs/configuring/typescript).
 
 Change to project directory:
 
@@ -20,58 +16,65 @@ Change to project directory:
 
 The app directory is where you define routes, create UI and colocate files such as components, tests, or stylesheets.
 
-In the app directory delete everything except page.tsx
+Read the following React Documentation:
 
-Edit app/page.tsx and make a very simple hello world React component in the file. Note that it is a convention in Next.js that the html page in the director is called page.tsx
+[What is a React Component](https://beta.reactjs.org/learn#components)
+
+[How to Write Markup with JSX](https://beta.reactjs.org/learn#writing-markup-with-jsx)
+
+Note: Our file extension is not jsx but tsx becuase we are using
+TypeScript
+
+In the app/page.tsx file delete the previous React component and replace it with the following simple hello world component:  
+
+        export default function Home() {
+                return (
+                        <div>Hello World</div>
+                )
+        }
+
+We wrote a very simple hello world React component in the file. Note that it is a convention in Next.js that the html page in the director is called page.tsx
+
+Comment out the styles import in app/page.tsx file
+
+Comment out the styles import in app/layout.tsx file
 
 Start the Server:
 
         npm run dev
 
-Note that the development server created a layout.tsx file by itself. This means the Next.js requires that there must be RootLayout component in the app folder for the app to function.
+Note that the development server created a layout.tsx file by itself even if you delete it. This means the Next.js requires that there must be RootLayout component in the app folder for the app to function.
 
-The app/layout.tsx and app/page.tsx files will be rendered when the user visits the root of your application.
+The app/layout.tsx, app/header.tsx, and app/page.tsx files will be rendered when the user visits the root of your application.
 
 The file app/layout.tsx is used to define UI that is shared across multiple pages. A layout accepts another layout or a page as its child. You can nest layouts to create nested routes.
 
 The file app/page.tsx is used to define the unique UI of a route. Pages represent the leaf of the route and are needed for the path to be accessible.
 
-Open the Browser:
+Open the Browser to see the results locally:
 
         http://localhost:3000/
 
+## Manual Deployment through [CLI](https://vercel.com/cli)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+npm i -g vercel
 
-## Getting Started
+Now go to the Next.js project directory and give the following command to deploy to cloud:
 
-First, run the development server:
+        vercel 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+In my case the web app is deployed to:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+        https://step00-helloworld.vercel.app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[CLI Docs](https://vercel.com/docs/cli)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Project config with vercel.json
 
-## Learn More
+[vercel.json](https://vercel.com/docs/project-configuration)
 
-To learn more about Next.js, take a look at the following resources:
+[example](https://github.com/grand-stack/grand-stack-starter/blob/master/vercel.json)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Rewrite Example](https://stackoverflow.com/questions/73607646/problems-mounting-a-vercel-nextjs-project-as-a-subdirectory-of-a-different-verce)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
