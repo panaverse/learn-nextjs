@@ -20,6 +20,16 @@ Also Watch [React Server Components and The Edge!](https://www.youtube.com/watch
 
 [Type-Safe Database Access at the Edge with Next 13 & PlanetScale](https://davidparks.dev/blog/type-safe-database-access-at-the-edge-with-next-and-planetscale/)
 
+[What Is Edge AI and How Does It Work?](https://blogs.nvidia.com/blog/2022/02/17/what-is-edge-ai/)
+
+[AI at the Edge](https://www.oreilly.com/library/view/ai-at-the/9781098120191/)
+
+Additional References:
+
+[Edge Computing](https://www.accenture.com/ae-en/insights/cloud/edge-computing-index)
+
+[What is Edge Computing? (By AWS)](https://aws.amazon.com/what-is/edge-computing/)
+
 
 
 
