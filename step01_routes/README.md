@@ -2,6 +2,8 @@
 
 [Read the routing fundamentals docs](https://beta.nextjs.org/docs/routing/fundamentals)
 
+[Watch Next.js 13 - How to use App folder & Layouts](https://www.youtube.com/watch?v=xXwxEudjiAY)
+
 In Next.js 13 folders are used to define routes. A route is a single path of nested folders, following the hierarchy from the root folder down to a final leaf folder.
 
 Files are used to create UI that is shown for the route segment.

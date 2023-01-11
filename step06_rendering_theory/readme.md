@@ -2,6 +2,8 @@
 
 With Next.js 13 you can interleave Server and Client Components in your application, and behind the scenes, React will seamlessly merge the work of both environments.
 
+[Watch Next.js 13 - Server & Client Component Basics](https://www.youtube.com/watch?v=IcexKbnTEAM&list=PLxCkFZQohykk8ejbV94XbigHSONNq4m3C)
+
 ## Static and Dynamic Rendering on the Server
 
 In addition to client-side and server-side rendering with React components, Next.js gives you the option to optimize rendering on the server with Static and Dynamic Rendering.
