@@ -24,6 +24,8 @@ Before start learning from this repo, [learn TypeScript](https://github.com/pana
 
 [Checkout the Practice Problems for Next.js 13](https://www.practiceprobs.com/problemsets/nextjs/dunder-mifflin/)
 
+[Step By Step Guide To Full Stack Web Development | Next.js13 Tailwind Prisma Postgresql Typescript](https://www.youtube.com/watch?v=gxkwMm_j850)
+
 After completing this repo you should move to these specialized Web 3 learning repos:
 
 [Next Dapps Learning Repo](https://github.com/panacloud-modern-global-apps/dapps-nextjs)
