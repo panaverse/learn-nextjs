@@ -9,6 +9,10 @@ Next.js Conf Keynote Announcing Version 13 :
 
 ### [Next.js 13 Beta Docs](https://beta.nextjs.org/docs/getting-started)
 
+Before going forward check out this [directory of headless ecommerce stores that excel at both Design and Performance]. Also check out the [tools they are using](https://theheadlessclub.com/tools)
+
+
+
 The stack used in this learning repo, it is a mixture of [Jamstack](https://jamstack.org/) and [T3](https://create.t3.gg/) Stacks:
 [TypeScript](https://www.typescriptlang.org/),
 [Next.js 13](https://nextjs.org/blog/next-13),
