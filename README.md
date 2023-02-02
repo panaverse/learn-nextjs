@@ -22,6 +22,8 @@ This repo is part of the [Certified Web 3.0 and Metaverse Developer Training Pro
 
 Before start learning from this repo, [learn TypeScript](https://github.com/panacloud-modern-global-apps/learn-typescript) and by doing these [TypeScript Node.js Projects](https://github.com/panacloud-modern-global-apps/chakra-nextjs-projects)
 
+[Checkout the Practice Problems for Next.js 13](https://www.practiceprobs.com/problemsets/nextjs/dunder-mifflin/)
+
 After completing this repo you should move to these specialized Web 3 learning repos:
 
 [Next Dapps Learning Repo](https://github.com/panacloud-modern-global-apps/dapps-nextjs)
