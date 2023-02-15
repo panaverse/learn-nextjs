@@ -1,5 +1,7 @@
 # Fetching Static on the Server in Next.js 13
 
+[Understanding the Basics of REST APIs](https://www.astera.com/type/blog/rest-api-definition/)
+
 First [read this official fetching data on the server documentation](https://beta.nextjs.org/docs/data-fetching/fundamentals#fetching-data-on-the-server)
 
 Second [read this fetching static data](https://beta.nextjs.org/docs/data-fetching/fundamentals#static-and-dynamic-data-fetches)
