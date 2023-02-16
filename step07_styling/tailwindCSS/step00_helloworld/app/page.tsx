@@ -1,10 +1,9 @@
+import Image from 'next/image'
 
-export default function Home() {
+export default function Page() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-        Hello, Next.js with Tailwind CSS!
-      </h1>
-    </div>
+    <h1 className="text-3xl font-bold underline">
+      Hello, Next.js from Zia Khan!
+    </h1>
   )
 }
