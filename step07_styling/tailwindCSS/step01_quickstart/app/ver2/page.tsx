@@ -5,7 +5,7 @@ import panaversePic from '../../public/panaverse.png';
 export default function Page() {
   return (
     <div className="flex justify-center bg-gray-300">
-      <div className='mx-4 order-last'>
+      <div className='mx-4 order-last self-center'>
         <Image src={panaversePic} width={80} height={80} alt='music' />
       </div>
     <div className='mx-4 self-center text-center'>
