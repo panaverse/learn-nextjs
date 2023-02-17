@@ -12,4 +12,4 @@ Read page 7 and 8 of [Modern CSS with Tailwind, Second Edition](https://pragprog
 
     app/ver2/page.tsx
 
-Now read Chapter 2 of [Modern CSS with Tailwind, Second Edition](https://pragprog.com/titles/tailwind2/modern-css-with-tailwind-second-edition/) to understand the basics of Tailwind CSS.
+Now read Chapters 2 and 3 of [Modern CSS with Tailwind, Second Edition](https://pragprog.com/titles/tailwind2/modern-css-with-tailwind-second-edition/) to understand the basics of Tailwind CSS.
