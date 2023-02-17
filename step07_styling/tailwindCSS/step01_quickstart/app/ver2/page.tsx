@@ -4,7 +4,7 @@ import panaversePic from '../../public/panaverse.png';
 
 export default function Page() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center bg-gray-300">
       <div className='mx-4 order-last'>
         <Image src={panaversePic} width={80} height={80} alt='music' />
       </div>
