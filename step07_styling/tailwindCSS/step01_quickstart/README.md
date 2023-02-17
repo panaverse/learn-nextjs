@@ -4,6 +4,8 @@ Read Page 5 of [Modern CSS with Tailwind, Second Edition](https://pragprog.com/t
 
     Create Root app/page.tsx
 
+To get a basic understanding of Flex layout checkout this [ChatGPT Conversation](https://sharegpt.com/c/xbABrsb)
+
 Read page 6 of [Modern CSS with Tailwind, Second Edition](https://pragprog.com/titles/tailwind2/modern-css-with-tailwind-second-edition/)  and create this page.tsx:
 
     app/ver1/page.tsx
