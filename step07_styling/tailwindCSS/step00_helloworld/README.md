@@ -5,7 +5,7 @@
 First, read [getting started with Next.js 13](https://beta.nextjs.org/docs/getting-started) and read [installing Tailwind CSS with Next.js 13](https://beta.nextjs.org/docs/styling/tailwind-css):
 
 ```bash
-npx create-next-app@latest --experimental-app
+npx create-next-app@latest
 # install tailwind css
 npm install -D tailwindcss postcss autoprefixer
 # create tailwind css config
