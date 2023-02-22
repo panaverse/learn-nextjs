@@ -1,4 +1,4 @@
-# Hello World with Next.js 13 and Tailwind CSS
+# Quick Start with Next.js 13 and Tailwind CSS
 
 Read Page 5 of [Modern CSS with Tailwind, Second Edition](https://pragprog.com/titles/tailwind2/modern-css-with-tailwind-second-edition/)
 
