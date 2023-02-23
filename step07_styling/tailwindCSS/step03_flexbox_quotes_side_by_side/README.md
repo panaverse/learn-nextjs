@@ -8,4 +8,8 @@ Start by reading pages 21 to 23 and build the [Quotes Side-by-Side Example 1a](h
 
 Update tailwind.config.js, app/globals.css, and app/page.tsx
 
+[Functions & Directives in Tailwind CSS](https://tailwindcss.com/docs/functions-and-directives)
+
+[How to use @apply directive in Tailwind-CSS?](https://www.geeksforgeeks.org/how-to-use-apply-directive-in-tailwind-css/)
+
 
