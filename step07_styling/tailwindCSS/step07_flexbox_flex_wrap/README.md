@@ -6,4 +6,6 @@ Start by reading page 29 and 30 and build the [Responsive Team Profile Example 3
 
 Update tailwind.config.js, app/globals.css, app/page.tsx, and next.config.js
 
-Note: Dont forget to config the image host in next.config.js 
+Note: Dont forget to config the image host in next.config.js
+
+Understanding Flex Wrap Concept on page 30.
