@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+      @apply bg-gray-200 text-gray-600;
+    }
+  }
+  
+  @layer components {
+    .card {
+      @apply bg-white p-9 max-w-xs rounded-lg m-8;
+    }
+    .card h1 {
+      @apply font-bold text-3xl text-blue-600;
+    }
+    .card p {
+      @apply mt-4;
+    }
+    .links {
+      @apply mt-4;
+    }
+    .links a {
+      @apply px-4 py-2 bg-blue-200 rounded-md text-gray-900 text-sm;
+    }
+  }
+  
