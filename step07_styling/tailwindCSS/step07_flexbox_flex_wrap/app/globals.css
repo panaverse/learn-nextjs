@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-800;
+  }
+}
+
+@layer components {
+  .container {
+    @apply w-auto max-w-none m-14;
+  }
+  .team-profile {
+    @apply text-center px-6 py-4;
+  }
+  .team-profile img {
+    @apply w-32 h-32 object-cover rounded-full object-top;
+  }
+  .team-profile h3 {
+    @apply font-bold text-xl;
+  }
+  .team-profile p {
+    @apply text-sm text-gray-600;
+  }
+}
