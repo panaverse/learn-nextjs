@@ -9,3 +9,9 @@ Update tailwind.config.js, app/globals.css, app/page.tsx, and next.config.js
 Note: Dont forget to config the image host in next.config.js
 
 Understanding Flex Wrap Concept on page 30.
+
+## Assignment 
+
+Build a [Logos Wrapped Example 3b](https://play.tailwindcss.com/UdIE5SQ7LX?size=540x530) in Next.js 13 on page 31 from this [CSS Flex and Grid book](https://shrutibalasa.gumroad.com/l/css-flex-and-grid).
+
+
