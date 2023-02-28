@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply text-gray-800;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply flex justify-between items-center
+  }
+  .icon-wrap {
+    @apply m-12;
+  }
+  .icon {
+    @apply inline-block p-3 bg-pink-600 text-white rounded;
+  }
+  .icon-text {
+    @apply text-lg border border-gray-400 px-3;
+  }
+}
