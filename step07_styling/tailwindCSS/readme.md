@@ -13,6 +13,8 @@ Then we will learn layouts with CSS Flex and Grid using Tailwind CSS from this [
 
 Then we will cover the chapters 6, 7, and 8 of the book [Modern CSS with Tailwind: Flexible Styling Without the Fuss 2nd Edition](https://pragprog.com/titles/tailwind2/modern-css-with-tailwind-second-edition/)
 
+[Play Frog Game to Learn Flex](https://flexboxfroggy.com)
+
 
 
 Additional Material:
