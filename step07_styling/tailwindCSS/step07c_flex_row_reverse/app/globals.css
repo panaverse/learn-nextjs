@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-700;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply  max-w-xl mx-auto mt-16;
+  }
+  .profile {
+    @apply mt-5;
+  }
+  .profile-img {
+    @apply h-36 object-cover m-5;
+    min-width: 9rem;
+  }
+  .profile h3 {
+    @apply font-bold text-xl;
+  }
+  .role {
+    @apply text-sm text-gray-500;
+  }
+  .desc {
+    @apply mt-3 leading-snug;
+  }
+}
