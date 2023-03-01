@@ -9,3 +9,5 @@ Update tailwind.config.js, app/globals.css, and app/page.tsx
 Understanding Justify Content option by reading pages 25 and 26.
 
 
+
+
