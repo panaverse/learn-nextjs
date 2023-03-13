@@ -41,7 +41,7 @@
 
 [Comparisons of API Architectural Styles](https://www.moesif.com/blog/api-guide/comparisons-of-api-architectural-styles/)
 
-Class 1 Videos: The API Economy
+## Class 1 Videos: The API Economy
 
 [Class 1: What is the API Economy in English on YouTube](https://youtu.be/1ztdYFRyCyE)
 
