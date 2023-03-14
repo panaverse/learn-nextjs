@@ -1,6 +1,4 @@
-# Fetching Static on the Server in Next.js 13
-
-[Understanding the Basics of REST APIs](https://www.astera.com/type/blog/rest-api-definition/)
+# Fetching Data on the Static Server
 
 First [read this official fetching data on the server documentation](https://beta.nextjs.org/docs/data-fetching/fundamentals#fetching-data-on-the-server)
 
@@ -27,9 +25,3 @@ fetch(`https://...`, { cache: 'no-store' });
 fetch(`https://...`, { next: { revalidate: false | 0 | number } } });
 
 The default behavior is fetch(https://..., { cache: 'force-cache' }).
-
-
-
-
-
-

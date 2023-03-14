@@ -1,5 +1,7 @@
 # REST API Testing with Postman
 
+[Understanding the Basics of REST APIs](https://www.astera.com/type/blog/rest-api-definition/)
+
 [Download and install the Postman App](https://www.postman.com/downloads/)
 
 [Sending your first request](https://learning.postman.com/docs/getting-started/sending-the-first-request/)

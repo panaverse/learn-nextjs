@@ -6,12 +6,6 @@
 
     npm install swr
 
-
 [Additional Reading](https://dev.to/zenstack/a-deep-dive-into-next13-data-fetching-114n)
 
 [Code](https://github.com/ymc9/nextjs-data-fetching)
-
-NOTE: The code is giving an Error we will resolve it latter.
-
-
-
