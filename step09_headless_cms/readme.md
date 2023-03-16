@@ -2,6 +2,8 @@
 
 [Read the Book - Modular: The Web’s New Architecture - And How It’s Changing Online Business](https://www.amazon.com/Modular-Architecture-Changing-Online-Business/dp/B0BF2SHS83/)
 
+[Composable architecture](https://www.netlify.com/web-agencies-best-practices-composable/)
+
 [Headless CMS explained in 1 minute by Contentful](https://www.contentful.com/r/knowledgebase/what-is-headless-cms/)
 
 [Headless CMS explained in 1 minute by Sanity](https://www.sanity.io/headless-cms)
