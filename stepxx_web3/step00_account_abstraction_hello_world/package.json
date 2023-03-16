@@ -17,6 +17,9 @@
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "4.9.5"
+    "typescript": "4.9.5",
+    "@rainbow-me/rainbowkit": "^0.11.1",
+    "@zerodevapp/wagmi": "^1.0.5",
+    "wagmi": "^0.11.7"
   }
 }

@@ -2,3 +2,6 @@
 
 [Zerodev docs](https://docs.zerodev.app/)
 
+    `yarn add @rainbow-me/rainbowkit`
+    `yarn add @zerodevapp/wagmi`
+    `yarn add wagmi`
