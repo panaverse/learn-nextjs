@@ -1,4 +1,6 @@
-# Headless CMS
+# Headless CMS and the New Modular Web Architecture
+
+[Read the Book - Modular: The Web’s New Architecture - And How It’s Changing Online Business](https://www.amazon.com/Modular-Architecture-Changing-Online-Business/dp/B0BF2SHS83/)
 
 [Headless CMS explained in 1 minute by Contentful](https://www.contentful.com/r/knowledgebase/what-is-headless-cms/)
 
@@ -9,3 +11,4 @@
 [Best Headless CMS Software List](https://www.g2.com/categories/headless-cms)
 
 [G2 Grid Graph for Headless CMS](https://www.g2.com/categories/headless-cms#grid)
+
