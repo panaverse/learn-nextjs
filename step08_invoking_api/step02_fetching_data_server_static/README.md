@@ -10,6 +10,8 @@ Third [about static data fetching](https://beta.nextjs.org/docs/data-fetching/fe
 
 By default, Next.js automatically does static fetches in Server Components. This means that the data will be fetched at build time, cached, and reused on each request. 
 
+Note that when you refresh/reload the page again and again it always shows the same quotation. 
+
 Fourth [read this article to review what you have learned about data fetching](https://dev.to/zenstack/a-deep-dive-into-next13-data-fetching-114n)
 
 Fifth [watch this video](https://www.youtube.com/watch?v=JeaHyhcCVCE)

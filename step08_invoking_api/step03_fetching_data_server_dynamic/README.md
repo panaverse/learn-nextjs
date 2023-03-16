@@ -2,6 +2,8 @@
 
 [Dynamic Data Fetching](https://beta.nextjs.org/docs/data-fetching/fetching#dynamic-data-fetching)
 
+Note that when you refresh/reload the page again and again it always shows a new quotation. 
+
 Note: 
 
 Next.js extends the native Web fetch() API to support caching.
