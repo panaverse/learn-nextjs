@@ -61,3 +61,6 @@ We will learn Flex remaining functionality with CSS Flex using Tailwind CSS from
 1. [Article Preview Example 15a](https://play.tailwindcss.com/Cq9WzaPGpv?size=900x700)
 2. [Fitness Report Example 15b](https://play.tailwindcss.com/FS3prtD4ZH?size=900x700)
 3. [Tweet Example 15c](https://play.tailwindcss.com/l0fEkRPp5A?size=750x500)
+
+
+
