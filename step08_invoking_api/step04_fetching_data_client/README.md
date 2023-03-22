@@ -13,3 +13,5 @@
 Note that when you refresh/reload the page again and again it always shows a new quotation. 
 
 [The Future of Data Fetching in React](https://www.niraj.life/blog/the-future-of-data-fetching-in-react)
+
+[Will React's New Cache Fix Its "Use" Hook?](https://www.youtube.com/watch?v=T3m-MZkuadU)
