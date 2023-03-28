@@ -4,8 +4,17 @@ const nextConfig = {
     appDir: true,
   },
   env: {
-    SPACE_ID: "507pec980nzn",
-    CONTENTFUL_ACCESS_KEY: "uvhKkHLM8N2jzZ8NVCwnpL-YcAcLIDF4mLe0J7fmmdE"
+    CONTENTFUL_SPACE_ID: "507pec980n",
+    CONTENTFUL_ACCESS_KEY: "uvhKkHLM8N2jzZ8NVCwnpL-YcAcLIDF4mLe0J7fmm"
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.ctfassets.net',
+        port: '',
+      },
+    ],
   },
 }
 

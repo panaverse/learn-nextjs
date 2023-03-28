@@ -16,13 +16,22 @@ Create User Content Type in Contentful with the following fields and types:
 
 Name: Text
 
+Img: Media
+
 Create multiple entries per content type that were created above.
 
 Now use Postman to query for the entry data.
 
 Create a Next.js page to query the content and display it.
 
-https://cdn.contentful.com/spaces/507pec980nzn/entries?access_token=uvhKkHLM8N2jzZ8NVCwnpL-YcAcLIDF4mLe0J7fmmdE&content_type=blog
+For reference I have added response.json file in this directory which is the
+response I received from contentful.
+
+https://www.npmjs.com/package/@contentful/rich-text-react-renderer
+
+    npm i @contentful/rich-text-react-renderer
+
+
 
 
 
