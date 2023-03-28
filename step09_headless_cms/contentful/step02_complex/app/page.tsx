@@ -30,8 +30,14 @@ export default async function Home() {
               <div>
                 {item.fields.picture.sys.id == a.sys.id? 
                 <Image src={"https:" + a.fields.file.url} alt="" width="100" height="100"/>: <div></div>}
+              </div>
+            ))}
             </div>
-              
+            <div>{blogs.includes.Entry.map((entry: any) => (
+              <div>
+                {item.fields.creator.sys.id == entry.sys.id? 
+                <div>Author: {entry.fields.name}</div>: <div></div>}
+              </div>
             ))}
             </div>
             <br/>

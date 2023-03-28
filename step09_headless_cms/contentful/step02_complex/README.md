@@ -1,5 +1,7 @@
 # Using Contentful Headless CMS with Next.js 13
 
+In this step we will learn how to fetch richtext, images, and references from Contentful.
+
 Create Blog Content Type in Contentful with the following fields and types:
 
 Title: Text
