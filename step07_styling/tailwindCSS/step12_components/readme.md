@@ -16,6 +16,8 @@ https://ui.shadcn.com
 
 [Daisy UI](https://daisyui.com/)
 
+[Float UI](https://floatui.com/)
+
 [Tailwind Components](https://tailwindcomponents.com/)
 
 [Tailwind Elements](https://tailwind-elements.com/)
