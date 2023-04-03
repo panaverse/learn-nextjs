@@ -20,6 +20,7 @@ by Dr. Hariram Chavan, Prof. Sana Shaikh](https://www.amazon.com/Introduction-DB
 7. [What is Normalization in DBMS (SQL)? 1NF, 2NF, 3NF Example](
 https://www.guru99.com/database-normalization.html)
 8. [Mastering PostgreSQL 15: Advanced techniques to build and manage scalable, reliable, and fault-tolerant database applications, 5th Edition 5th ed. Edition](https://www.amazon.com/Mastering-PostgreSQL-techniques-fault-tolerant-applications/dp/1803248343/ref=sr_1_1)
+9. [Watch Raw SQL, SQL Query Builder, or ORM?](https://www.youtube.com/watch?v=x1fCJ7sUXCM)
 
 
 
