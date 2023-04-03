@@ -38,7 +38,7 @@ References:
 [Kysely Dialect for Neon](https://github.com/seveibar/kysely-neon)
 
 
-Note: I am getting the following Error:
+## Note: I am getting the following Error:
 
 error - node_modules/@neondatabase/serverless/index.js (43:3300) @ ws
 
