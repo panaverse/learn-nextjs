@@ -26,8 +26,11 @@ Now use Postman to query for the entry data.
 
 Create a Next.js page to query the content and display it.
 
-For reference I have added response.json file in this directory which is the
-response I received from contentful.
+For reference I have added response.json file in this directory which is the response I received from contentful.
+
+To easily view the JSON returned by the Contentful API check out this tool:
+
+https://jsonformatter.curiousconcept.com
 
 https://www.npmjs.com/package/@contentful/rich-text-react-renderer
 
