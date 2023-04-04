@@ -1,4 +1,4 @@
-# Hello World with Neon and Kysely using Next.js 13
+# Hello World with Neon and Kysely (PostgresDialect) using Next.js 13
 
 Create a [Next.js 13 project with app routing](https://beta.nextjs.org/docs)
 
