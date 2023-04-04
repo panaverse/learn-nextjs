@@ -48,4 +48,7 @@ References:
 [Kysely](https://kysely-org.github.io/kysely/)
 
 
+### Note: I have not been able to figure out how to deploy this project on Vercel. PostgreSQL client libraries & tools installed need to be installed for this project to run, and how do we do so in a Serverless Function.
+
+
 
