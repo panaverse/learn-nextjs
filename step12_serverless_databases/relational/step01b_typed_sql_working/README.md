@@ -17,7 +17,19 @@ Copy the Neon connection string into the next.config.js file as env variable
 
 Install the following packages:
 
-    npm i kysely kysely-neon ws
+    npm i kysely kysely-neon pg 
+
+    npm i @types/pg -D
+
+You will also have to install pg-native module:
+
+https://www.npmjs.com/package/pg-native
+
+You need PostgreSQL client libraries & tools installed before you install pg-native npm package. An easy way to check is to type pg_config. If pg_config is in your path, you should be good to go. If it's not in your path you'll need to consult operating specific instructions on how to go about getting it there.
+
+Once pg_config is in your path run:
+
+    npm i pg-native
 
 Update code in src/app/api/hello/route.ts file.
 
@@ -35,14 +47,5 @@ References:
 
 [Kysely](https://kysely-org.github.io/kysely/)
 
-[Kysely Dialect for Neon](https://github.com/seveibar/kysely-neon)
 
 
-## Note: I am getting the following Error:
-
-error - node_modules/@neondatabase/serverless/index.js (43:3300) @ ws
-
-error - unhandledRejection: Error: All attempts to open a WebSocket to connect to the database failed. If using Node, please install the `ws` package (or simply use the `pg` package instead).
-    at ws (webpack-internal:///(sc_server)/./node_modules/@neondatabase/serverless/index.js:3948:31)
-
-null

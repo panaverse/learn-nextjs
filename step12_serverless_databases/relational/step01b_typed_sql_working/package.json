@@ -18,10 +18,14 @@
     "kysely-neon": "^1.0.2",
     "next": "13.2.4",
     "pg": "^8.10.0",
+    "pg-native": "^3.0.1",
     "postgres": "^3.3.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.2",
     "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.6.6"
   }
 }

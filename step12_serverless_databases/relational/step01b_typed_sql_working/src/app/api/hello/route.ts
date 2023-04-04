@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 
+import { Pool } from 'pg';
+
 import {
   Kysely,
+  PostgresDialect,
   Generated,
   ColumnType,
   Selectable,
@@ -9,7 +12,6 @@ import {
   Updateable,
 } from 'kysely';
 
-import { NeonDialect } from "kysely-neon";
 
 interface playing_with_neon_Table {
   id: Generated<number>
@@ -24,9 +26,12 @@ interface Database {
 
 export async function GET(request: NextRequest) {
   const db = new Kysely<Database>({
-    dialect: new NeonDialect({
-      connectionString: process.env.NEON_DATABASE_URL!,
-    }),
+    dialect: new PostgresDialect({
+      pool: new Pool({
+        ssl: true,
+        connectionString: process.env.NEON_DATABASE_URL!
+      })
+    })
   });
   
   const result = await db
