@@ -40,20 +40,9 @@ References:
 
 ## Note: I am getting the following Error:
 
-warn  - ./node_modules/@neondatabase/serverless/index.js
-Critical dependency: the request of a dependency is an expression
-
-Import trace for requested module:
-./node_modules/@neondatabase/serverless/index.js
-./node_modules/kysely-neon/dist/index.js
-./src/app/api/hello/route.ts
 error - node_modules/@neondatabase/serverless/index.js (43:3300) @ ws
+
 error - unhandledRejection: Error: All attempts to open a WebSocket to connect to the database failed. If using Node, please install the `ws` package (or simply use the `pg` package instead).
     at ws (webpack-internal:///(sc_server)/./node_modules/@neondatabase/serverless/index.js:3948:31)
+
 null
-
-I have reported the issue here:
-
-https://github.com/kysely-org/kysely/issues/407
-
-https://github.com/seveibar/kysely-neon/issues/1
