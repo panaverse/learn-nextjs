@@ -9,3 +9,6 @@ Build a Panaverse Website/Web App with the following functionality:
 5. Developer Signup and Signin
 6. Developer Profile Submission and Edit Form
 7. Approved Developer Profile for everyone to see
+
+
+Note: I will give you the Contentful model as soon as I have some time. In the meanwhile start working on the project.
