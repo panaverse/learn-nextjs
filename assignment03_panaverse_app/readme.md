@@ -3,8 +3,9 @@
 Build a Panaverse Website/Web App with the following functionality:
 
 1. Introduce Panaverse DAO
-2. Detailed Sylabus for Web 3 and Metaverse Program
+2. Detailed Syllabus for Web 3 and Metaverse Program
 3. All the above content coming from Contentful
-4. Developer Signup and Signin
-5. Developer Profile Submition and Edit Form
-6. Approved Developer Profile for everyone to see
+4. The functionality below will be store in Neon Database
+5. Developer Signup and Signin
+6. Developer Profile Submission and Edit Form
+7. Approved Developer Profile for everyone to see
