@@ -1,7 +1,5 @@
 # Details
 
-[useState](https://react.dev/reference/react/useState)
-
 [Thinking in React](https://react.dev/learn/thinking-in-react)
 
 [Describing the UI](https://react.dev/learn/describing-the-ui)
