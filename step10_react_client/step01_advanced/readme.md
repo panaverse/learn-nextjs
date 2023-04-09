@@ -16,4 +16,8 @@
 
 [useEffect](https://react.dev/reference/react/useEffect)
 
+[Mastering React's useEffect](https://www.youtube.com/watch?v=dH6i3GurZW8)
+
 [useContext](https://react.dev/reference/react/useContext)
+
+[useContext for better state management!](https://dev.to/hey_yogini/usecontext-for-better-state-management-51hi)
