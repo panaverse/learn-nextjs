@@ -15,3 +15,8 @@ Our first task is to understanding Ethereum:
 [What is Ethereum in Detail](https://github.com/ethereumbook/ethereumbook/blob/develop/01what-is.asciidoc)
 
 [Now we will start exploring Ethereum, learning how to use wallets, how to create transactions, and also how to run a basic smart contract.](https://github.com/ethereumbook/ethereumbook/blob/develop/02intro.asciidoc)
+
+
+## Additional Resources
+
+[Watch Ethereum Tutorial | Hindi](https://www.youtube.com/watch?v=6aF6p2VUORE&t=14393s)
