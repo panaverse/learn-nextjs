@@ -20,3 +20,5 @@ Our first task is to understanding Ethereum:
 ## Additional Resources
 
 [Watch Ethereum Tutorial | Hindi](https://www.youtube.com/watch?v=6aF6p2VUORE&t=14393s)
+
+Note: Ethereum.pptx presentation is available in this directory.
