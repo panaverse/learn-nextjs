@@ -8,7 +8,7 @@
 
 [Watch Polygon zkEVM Tutorial - MetaMask, Bridge, Swap](https://www.youtube.com/watch?v=0Ask4EfZ0P8)
 
-# Testnet
+## Testnet
 
 [Polygon zkEVM Testnet Complete Guide !!](https://blokdrops.medium.com/polygon-zkevm-testnet-complete-guide-4-f027051ca5a5)
 
@@ -18,3 +18,10 @@
 
 
 [Deploy a Smart Contract to Polygon zkEVM Testnet](https://blog.thirdweb.com/guides/how-to-deploy-a-smart-contract-to-polyon-zkevm-testnet/)
+
+
+## News
+
+[0VIX, QuickSwap Top Early List of DeFi Leaders on Polygon zkEVM](https://www.bsc.news/post/0vix-quickswap-top-early-list-of-defi-leaders-on-polygon-zkevm)
+
+[Aave To Launch on Polygon zkEVM](https://thedefiant.io/aave-polygon-zkevm-deployment)
