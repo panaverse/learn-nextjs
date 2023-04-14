@@ -1,4 +1,4 @@
-# Simple Books API using Next.js 13 and Neon#
+# Simple Books API using Next.js 13 and Neon
 
 Develop a REST API that allows you to reserve a book. This API should be fully founctional with SQL calls to Neon Database.
 
