@@ -6,8 +6,6 @@
 
 [State as a Snapshot](https://react.dev/learn/state-as-a-snapshot)
 
-[Adding Interactivity](https://react.dev/learn/adding-interactivity)
-
 [Suspense](https://react.dev/reference/react/Suspense)
 
 [Managing State](https://react.dev/learn/managing-state)
