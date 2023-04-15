@@ -11,3 +11,7 @@
 [Intro Account Abstraction](https://docs.stackup.sh/docs/introduction/account-abstraction)
 
 [ERC-4337 Overview](https://docs.stackup.sh/docs/introduction/erc-4337-overview)
+
+References:
+
+[Awesome Account Abstraction References](https://github.com/4337Mafia/awesome-account-abstraction)
