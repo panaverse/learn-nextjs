@@ -6,3 +6,6 @@ In this directory we will create baby steps following this Text Book (Chapter 3 
 
 Each step will be a hardhat project including tests and deployment scripts.
 
+You can also take help from this [repo](https://github.com/panaverse/defi-dapps-solidity-smart-contracts)
+
+
