@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   env: {
-    CONNECTION_STRING: 'postgres://uzairbangee:cr5kPWqG0oEy@ep-rapid-mountain-148403.us-east-2.aws.neon.tech/neondb',
+    CONNECTION_STRING: 'Enter your connection string',
   }
 }
 
