@@ -27,9 +27,6 @@ export async function POST(request: Request) {
       );
     }
 
-    // let entity = (await dbClient.unsafe(`INSERT INTO "Entity" (entity_type) VALUES ('user') RETURNING "Entity".entity_id`))[0];
-    // console.log("entity ", entity)
-
     const nonce = Math.floor(Math.random() * 10000).toString();
     const secretText = uuidv4();
 
