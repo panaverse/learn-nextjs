@@ -16,7 +16,7 @@ export async function GET(request: Request, { params }: {params: ParamsType}) {
     //           .where('Users.publicAddress', '=', address)
     //           .executeTakeFirst();
 
-    const userExists = (await dbClient.unsafe(`SELECT "publicAddress", "nonce", "Users".entity_id FROM "Users" INNER JOIN "Entity" ON "Entity".entity_id = "Users".entity_id WHERE "publicAddress" = '${address}'`))[0];
+    const userExists = (await dbClient.unsafe(`SELECT "publicAddress", "nonce" FROM "Users" WHERE "publicAddress" = '${address}'`))[0];
 
     if(!userExists){
       return NextResponse.json(

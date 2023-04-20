@@ -28,7 +28,7 @@ export async function POST(request: Request) {
     //     .where("Users.publicAddress", "=", publicAddress)
     //     .executeTakeFirst();
 
-    const user = (await dbClient.unsafe(`SELECT "Users".* from "Users" INNER JOIN "Entity" ON "Entity".entity_id = "Users".entity_id WHERE "publicAddress"='${publicAddress}'`))[0];
+    const user = (await dbClient.unsafe(`SELECT "Users".* from "Users" WHERE "publicAddress"='${publicAddress}'`))[0];
 
     if (!user) {
         return NextResponse.json(
@@ -75,7 +75,6 @@ export async function POST(request: Request) {
         publicAddress: publicAddress,
         first_name: user.firstName,
         last_name: user.lastName,
-        entity_id: user.entity_id,
         email: user.email,
         pictureUrl: user.pictureUrl,
         creation_date: user.creation_date,

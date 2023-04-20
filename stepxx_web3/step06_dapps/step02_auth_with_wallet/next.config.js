@@ -5,6 +5,7 @@ const nextConfig = {
   },
   env: {
     CONNECTION_STRING: 'Enter your connection string',
+
   }
 }
 

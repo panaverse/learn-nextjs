@@ -8,7 +8,6 @@ export interface UserData {
     email: string;
     pictureUrl: string;
     creation_date: string;
-    entity_type: string;
 }
 
 export class CurrentToken {

@@ -27,8 +27,8 @@ export async function POST(request: Request) {
       );
     }
 
-    let entity = (await dbClient.unsafe(`INSERT INTO "Entity" (entity_type) VALUES ('user') RETURNING "Entity".entity_id`))[0];
-    console.log("entity ", entity)
+    // let entity = (await dbClient.unsafe(`INSERT INTO "Entity" (entity_type) VALUES ('user') RETURNING "Entity".entity_id`))[0];
+    // console.log("entity ", entity)
 
     const nonce = Math.floor(Math.random() * 10000).toString();
     const secretText = uuidv4();
@@ -39,7 +39,7 @@ export async function POST(request: Request) {
     //     .returning(["nonce", "publicAddress", "entity_id"])
     //     .executeTakeFirstOrThrow();
 
-    const user = (await dbClient.unsafe(`INSERT INTO "Users" (nonce, "publicAddress", entity_id, "secretText") VALUES ('${nonce}', '${publicAddress}', '${entity.entity_id}', '${secretText}') RETURNING "nonce", "publicAddress", "Users".entity_id`))[0];
+    const user = (await dbClient.unsafe(`INSERT INTO "Users" (nonce, "publicAddress","secretText") VALUES ('${nonce}', '${publicAddress}', '${secretText}') RETURNING "nonce", "publicAddress"`))[0];
 
     return NextResponse.json({ user })
 
