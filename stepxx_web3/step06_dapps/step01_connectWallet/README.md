@@ -1,38 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Overview
 
-## Getting Started
+We will be using a developer framework called ZERODEV for creating, using, and extending smart wallets powered by account abstraction (ERC-4337). 
+In this step we have used this framework to create ERC-4337 wallets using different thirdy-party social media logins.
 
-First, run the development server:
+[Zerodev docs](https://docs.zerodev.app/) 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+### Required libraries 
+
+```
+yarn add @zerodevapp
+yarn add @zerodevapp/social-wallet
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Understanding code
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1) First create a project ID from zero dev's dashboard. The id being used in this step is a test id from zero dev, you can replace it with your own id.
+2) Initialize the signer 
+```
+import { getZeroDevSigner, getSocialWalletOwner } from '@zerodevapp/sdk'
+import {SocialWallet} from '@zerodevapp/social-wallet';
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+const signer = await getZeroDevSigner({
+       projectId: 'Enter-your-projectId',
+       owner: await getSocialWalletOwner('Enter-your-projectId', socialWallet)
+      })
+```
+This piece of code with initialize the zerodev signer and prompt the user with a modal to login with one of their social media platforms.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3) Read & write data from the newly created wallet address using zerodev signer
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You can interact with the wallet using zerodev signer to read, write or send transactions to blockchain. In this example we have simply read the address of the newly created wallet account
 
-## Learn More
+```
+const userAddress = await signer.getAddress();
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
