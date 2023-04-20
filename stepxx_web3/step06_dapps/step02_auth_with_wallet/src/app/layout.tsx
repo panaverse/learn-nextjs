@@ -2,7 +2,6 @@
 import './globals.css'
 import React from 'react'
 import { Inter } from 'next/font/google';
-import { getUser } from '@/utils/getAuth';
 
 const interFonts = Inter({
   subsets: ["latin"],
@@ -22,7 +21,6 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-  const user = getUser();
 
   return (
     <html lang="en">

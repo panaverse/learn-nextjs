@@ -5,7 +5,6 @@ import { getZeroDevSigner, getSocialWalletOwner, ZeroDevSigner } from '@zerodeva
 import {
   SocialWallet,
 } from '@zerodevapp/social-wallet';
-import { getUser } from '@/utils/getAuth';
 import { CurrentToken, getUserClient } from '@/utils/localStorage';
 
 
