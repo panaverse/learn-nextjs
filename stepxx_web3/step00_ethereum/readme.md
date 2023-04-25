@@ -1,5 +1,9 @@
 # Understanding Ethereum
 
+Before getting start lets understand the importance of Ethereum:
+
+[Ethereum is going to transform investing](https://cointelegraph.com/news/ethereum-is-going-to-transform-investing)
+
 Our first task is to understanding Ethereum:
 
 [What is Ethereum?](https://ethereum.org/en/what-is-ethereum/)
