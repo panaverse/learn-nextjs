@@ -1,0 +1,208 @@
+HARDHAT - Baby Steps Tutorial
+-----------------------------
+
+Hardhat is a development environment that facilitates building on Ethereum. The entire environment is designed to function around selected,  TASKS and PLUGINs. Everytime you are running hardhat from a command line, you are performing a tasks and plugins you are free to choose, any.
+
+WHY Hardhat
+-----------
+
+Hardhat helps developers to manage and automate the recurring tasks that are inherent to the process of building smart contracts and dApps.
+Allows compiling and testing at the very core.
+A local Ethereum network is also available, that allows developers to deploy contracts, run tests and debug code, called Hardhat Network.
+
+To proceed further you should know the below or learn them first.
+⦁	Write code in JavaScript
+⦁	Operate a terminal
+⦁	Use git
+⦁	Understand the basics of how smart contracts work
+⦁	Set up a Coinbase or Metamask wallet
+
+A normal development will under go on below steps: 
+
+⦁	Setting Node.js environment for Ethereum development
+⦁	Creating and configuring a Hardhat project
+⦁	The basics of a Solidity smart contract that implements a token
+⦁	Writing automated tests for your contract using Hardhat
+⦁	Debugging Solidity with console.log() using Hardhat Network
+⦁	Deploying your contract to Hardhat Network and Ethereum testnets
+
+
+
+Baby step - 1 (Setting up the Environment)
+------------------------------------------
+    Install Noje.Js and VS Code with Hardhat extension
+
+
+
+Baby step - 2 (Creating a project)
+----------------------------------
+    ⦁	use npm version 7 or higher
+    
+    ⦁	Open a new terminal and run these commands to create a new folder:
+        mkdir hardhat-tutorial
+        cd hardhat-tutorial
+    
+    ⦁	Now run    npm init
+    
+    ⦁	Now install Hardhat by running this command on command line:  npm install --save-dev hardhat
+    
+    ⦁	Now RUN hardhat, by:   npx hardhat in the same directory
+    
+    ⦁	After running command npx hardhat  a screen will be displayed showing that hardhat has been installaed, among all choices shown, just select 
+
+        "Create an empty hardhat.config.js"
+
+        You can check project root directory, this file is a must to move on. Since hardhat.config.js this is the 
+        first file that hardhat will search on startup.
+
+    ⦁	Now Install a plugin: npm install --save-dev @nomicfoundation/hardhat-toolbox
+
+    ⦁	Now open hardhat.config.js and add the following line at the top of every thing, (copy-paste)
+        require("@nomicfoundation/hardhat-toolbox");
+
+
+
+Baby Step - 3 (Create a simple smart contract)
+----------------------------------------------
+
+    ⦁	In project root directory, creat a new directory called   contracts   and in contract directory create a file   Token.sol   
+        Now copy & paste the following code into an empty  Token.sol  file.
+    
+    
+                //SPDX-License-Identifier: UNLICENSED
+
+                // Solidity files have to start with this pragma.
+                // It will be used by the Solidity compiler to validate its version.
+                pragma solidity ^0.8.9;
+
+
+                // This is the main building block for smart contracts.
+                contract Token {
+                    // Some string type variables to identify the token.
+                    string public name = "My Hardhat Token";
+                    string public symbol = "MHT";
+
+                    // The fixed amount of tokens, stored in an unsigned integer type variable.
+                    uint256 public totalSupply = 1000000;
+
+                    // An address type variable is used to store ethereum accounts.
+                    address public owner;
+
+                    // A mapping is a key/value map. Here we store each account's balance.
+                    mapping(address => uint256) balances;
+
+                    // The Transfer event helps off-chain applications understand
+                    // what happens within your contract.
+                    event Transfer(address indexed _from, address indexed _to, uint256 _value);
+
+                    /**
+                     * Contract initialization.
+                     */
+                    constructor() {
+                        // The totalSupply is assigned to the transaction sender, which is the
+                        // account that is deploying the contract.
+                        balances[msg.sender] = totalSupply;
+                        owner = msg.sender;
+                    }
+
+                    /**
+                     * A function to transfer tokens.
+                     *
+                     * The `external` modifier makes a function *only* callable from *outside*
+                     * the contract.
+                     */
+                    function transfer(address to, uint256 amount) external {
+                        // Check if the transaction sender has enough tokens.
+                        // If `require`'s first argument evaluates to `false` then the
+                        // transaction will revert.
+                        require(balances[msg.sender] >= amount, "Not enough tokens");
+
+                        // Transfer the amount.
+                        balances[msg.sender] -= amount;
+                        balances[to] += amount;
+
+                        // Notify off-chain applications of the transfer.
+                        emit Transfer(msg.sender, to, amount);
+                    }
+
+                    /**
+                     * Read only function to retrieve the token balance of a given account.
+                     *
+                     * The `view` modifier indicates that it doesn't modify the contract's
+                     * state, which allows us to call it without executing a transaction.
+                     */
+                    function balanceOf(address account) external view returns (uint256) {
+                        return balances[account];
+                    }
+                }
+ 
+ 
+ 
+Baby Step - 4 (Compile the contract)
+------------------------------------
+
+    ⦁	To complile the contract (i.e as created in Baby Step - 3), go to command line and type the following
+         npx hardhat compile
+
+    ⦁	On successful compilation you will receive a message as below
+         Compiled 1 Solidity file successfully
+
+
+
+Baby Step - 5 (Testing contracts - we have created, above)
+----------------------------------------------------------
+    There are two ways to test contracts, Automated and the Manual one. 
+
+    First we will try the manual method which is built-in hardhat method and we don't need to setup anything.
+
+    ⦁	Once again, in project root directory, create folder   test   and create a file  Token.js  in it.
+
+    ⦁	Now paste following code in Token.js file
+    
+                    const { expect } = require("chai");
+                    describe("Token contract", function () {
+                        it("Deployment should assign the total supply of tokens to the owner", async function () {
+                                const [owner] = await ethers.getSigners();
+                                const Token = await ethers.getContractFactory("Token");
+                                const hardhatToken = await Token.deploy();
+                                const ownerBalance = await hardhatToken.balanceOf(owner.address);
+                                expect(await hardhatToken.totalSupply()).to.equal(ownerBalance);
+                         });
+                   });
+
+
+    ⦁	To execute above code, run     npx hardhat test    on command line
+
+        on successful  test,  a success message will be displayed.
+
+ 
+That is it for the manual, part
+
+
+Now the automation part 
+------------------------ 
+
+Steps are easy and simple as given below,
+
+        a) The first step is that, you need to do cloning below repository and installing its dependencies:
+
+                ⦁   git clone https://github.com/NomicFoundation/hardhat-boilerplate.git
+                ⦁   Go into directory  hardhat-boilerplate  (by typing    cd hardhat-boilerplate)
+                ⦁   Now run    npm install  to install dependencies
+
+        b)  Now run   npx hardhat node   on command line
+            DON'T close this terminal
+
+        e)  Now open a NEW terminal, 
+        
+                ⦁   Go to same directory i.e. hardhat-boilerplate 
+                ⦁   Type    npx hardhat run scripts/deploy.js --network localhost
+
+        f)  Finally, run below commands to reach our target screen
+                ⦁ cd frontend
+                ⦁ npm install
+                ⦁ npm start
+             
+             
+              That is it      
+ ------- Thanks for your time  -------------
