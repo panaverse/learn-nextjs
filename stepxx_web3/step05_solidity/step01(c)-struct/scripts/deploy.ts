@@ -5,10 +5,12 @@ async function main() {
 
   console.log("Deploying contracts with the account:", deployer.address);
 
-  const Lock = await ethers.getContractFactory("Structure");
-  const lock = await Lock.deploy();
+  console.log("Account balance:", (await deployer.getBalance()).toString());
 
-  console.log("Token address:", lock.address);
+  const Token = await ethers.getContractFactory("Structure");
+  const token = await Token.deploy(23, "hira");
+
+  console.log("Token address:", token.address);
 }
 
 main()

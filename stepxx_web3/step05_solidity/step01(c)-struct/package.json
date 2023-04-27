@@ -1,17 +1,16 @@
 {
-  "name": "step08-struct",
+  "name": "step00",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.7",
-    "ethers": "^6.3.0",
+    "ethers": "^5.7.2",
     "hardhat": "^2.14.0",
     "ts-node": "^10.9.1",
     "typechain": "^8.1.1",
