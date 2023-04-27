@@ -40,6 +40,11 @@ if transaction overflows it will not execute
 
 by default value store in boolean type is false
 
+# Address
+
+An address is a 20 bytes-long data type. It is specifically designed to hold account
+addresses and EOA in Ethereum, which are 160 bits or 20 bytes in size.
+
 npm init --y
 npm install --save-dev hardhat
 npx hardhat

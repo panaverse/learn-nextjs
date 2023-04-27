@@ -4,31 +4,23 @@ pragma solidity ^0.8.9;
 // Uncomment this line to use console.log
 // import "hardhat/console.sol";
 
-contract Lock {
-    uint public unlockTime;
-    address payable public owner;
+contract payEther {
+    address payable sendadd =
+        payable(0x5B38Da6a701c568545dCfcB03FcB875f56beddC4);
 
-    event Withdrawal(uint amount, uint when);
+    // Functions declared with the payable keyword have the ability to accept Ether from the caller. The call will fail if Ether is not provided by the sender.
+    function getEther() public payable {}
 
-    constructor(uint _unlockTime) payable {
-        require(
-            block.timestamp < _unlockTime,
-            "Unlock time should be in the future"
-        );
-
-        unlockTime = _unlockTime;
-        owner = payable(msg.sender);
+    function getBalance() public view returns (uint) {
+        return address(this).balance;
     }
 
-    function withdraw() public {
-        // Uncomment this line, and the import of "hardhat/console.sol", to print a log in your terminal
-        // console.log("Unlock time is %o and block timestamp is %o", unlockTime, block.timestamp);
-
-        require(block.timestamp >= unlockTime, "You can't withdraw yet");
-        require(msg.sender == owner, "You aren't the owner");
-
-        emit Withdrawal(address(this).balance, block.timestamp);
-
-        owner.transfer(address(this).balance);
+    /* - <address>.transfer(uint 256) Its sends given amount of wei to address 
+        and throws an exception in the event of failture 
+      - <address>.send(uint256 amount) returns (bool): This function sends the 
+       given amount of wei to address and returns false in the event of failure.  
+    */
+    function sendEther() public {
+        sendadd.transfer(1 ether);
     }
 }

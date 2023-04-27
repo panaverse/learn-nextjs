@@ -2,19 +2,20 @@
 pragma solidity ^0.8.9;
 
 // Uncomment this line to use console.log
-// import "hardhat/console.sol";
+import "hardhat/console.sol";
 
-contract MemoryvsStorage{
+contract MemoryvsStorage {
+    string[] public student = ["hira", "javeria", "fizza"];
 
-    string[] public student=['hira','javeria','fizza'];
+    function mem() public view {
+        string[] memory s1 = student;
 
-    function mem () public view{
-        string[] memory s1= student;
-        s1[0]='amna';
+        s1[0] = "amna";
+        console.log(s1[0]);
     }
 
-    function stor () public{
-        string[] storage s1= student;
-        s1[0]='amna';
+    function stor() public {
+        string[] storage s1 = student;
+        s1[0] = "amna";
     }
 }

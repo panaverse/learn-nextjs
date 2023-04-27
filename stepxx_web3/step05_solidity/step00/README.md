@@ -2,13 +2,6 @@
 
 The line "// SPDX-License-Identifier: MIT" in a Solidity file serves as a way to specify the license type for the code and acts as a form of copyright notice for the smart contract. It indicates that the code is released under the permissive MIT license, which allows users to freely use, modify, and distribute the code for any purpose. This line also helps to avoid any potential copyright issues that may arise when the source code of a smart contract is made available to the public.
 
-# Remix ?
-
-open source IDE - Develop, Deploy and Administer
-language support - Solidity and Vyper
-written in - Javascript
-Modules - Testing, Debugging and Deploy
-
 # Smart Contract Compilation
 
 Contract source.sol file --> Solidity Compiler
@@ -86,3 +79,12 @@ import 'CommonLibrary.sol';
   2 - Not persistence.
   3 - No gas.
   4 - Like a computer RAM.
+
+Storage: This is global memory available to all functions within a contract. This
+storage is permanent storage that Ethereum stores on every node within its
+environment.
+• Memory: This is local memory available to every function within a contract. This is
+short-lived and fleeting memory that gets torn down when a function completes its
+execution.
+• Calldata: Call data refers to the input data that is sent to a smart contract when a function is called. It includes the function's signature and any arguments that are passed to it. The call data is read by the contract and used to execute the function. To access the call data in Solidity, developers can use the "msg.data" variable.
+• Stack: Stack is a temporary storage area in the Ethereum Virtual Machine (EVM) that is used to execute instructions in a smart contract. It operates like a Last-In-First-Out (LIFO) data structure, which means that the most recently added item is the first to be removed.
