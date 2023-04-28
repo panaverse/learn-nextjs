@@ -5,11 +5,11 @@ import { fetchData } from "../components/fetchData";
 const ContractData = () => {
   const [data, setData] = useState(null);
 
+  const getData = async () => {
+    const data = await fetchData();
+    setData(data);
+  };
   useEffect(() => {
-    const getData = async () => {
-      const result = await fetchData();
-      setData(result);
-    };
     getData();
   }, []);
 

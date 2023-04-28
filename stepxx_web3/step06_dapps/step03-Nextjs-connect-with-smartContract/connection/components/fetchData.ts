@@ -15,9 +15,7 @@ export const fetchData = async () => {
       contractABI.abi,
       provider
     );
-
-    const data = await contractInstance.getCount(); // Replace 'someFunction' with a function from your smart contract
-
+    const data = await contractInstance.getter();
     return data;
   } catch (error) {
     console.error("Error fetching data:", error);
