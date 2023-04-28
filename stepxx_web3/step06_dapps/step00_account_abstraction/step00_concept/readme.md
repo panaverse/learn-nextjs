@@ -1,5 +1,7 @@
 # Account Abstraction, Smart contract wallets, and ERC-4337
 
+[Watch Getting started with ERC-4337 & Stackup](https://www.youtube.com/watch?v=WCJxGzXqcuw)
+
 [What is Account Abstraction and Why is Everyone Talking About It?](https://hackernoon.com/what-is-account-abstraction-and-why-is-everyone-talking-about-it)
 
 [Account abstraction](https://ethereum.org/en/roadmap/account-abstraction/)
