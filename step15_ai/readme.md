@@ -1,6 +1,8 @@
-# AI Driven Apps
+# Building the Future with AI Powered Apps
 
  In this step, we’ll explore the tools behind this new wave of technology and how to wield them to build mind-blowing applications.
+
+ [Watch Building the Future with LLMs, LangChain, & Pinecone](https://www.youtube.com/watch?v=nMniwlGyX-c)
 
 [Improving Large Language Models With Langchain and Pinecone](https://www.nextbigfuture.com/2023/04/improving-large-language-models-with-langchain-and-pinecone.html)
 

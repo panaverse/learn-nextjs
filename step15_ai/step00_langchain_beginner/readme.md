@@ -1,5 +1,7 @@
 # LangChain Beginner Guide
 
+[Langchain Javascript Coding Tutorial | Getting Started | Node.js Quickstart](https://www.youtube.com/watch?v=zAnf6PPnvLg)
+
 [Langchain Tutorial For Typescript and Javascript Developers](https://github.com/mayooear/langchain-js-tutorial)
 
 References:
