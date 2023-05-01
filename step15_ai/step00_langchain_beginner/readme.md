@@ -1,6 +1,8 @@
-# LangChain
+# LangChain Beginner Guide
 
 [Langchain Tutorial For Typescript and Javascript Developers](https://github.com/mayooear/langchain-js-tutorial)
+
+References:
 
 [LangChainJS Support for Multiple JS Environments](https://blog.langchain.dev/js-envs/)
 
