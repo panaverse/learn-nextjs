@@ -10,6 +10,8 @@ Our standard learning Database will be [Vercel Postgres](https://vercel.com/docs
 
 Vercel Postgres is actually [Neon](https://neon.tech/) which is a Serverless Postgres Database
 
+[Postgres benchmarks between popular ORM libraries](https://github.com/drizzle-team/drizzle-northwind-benchmarks-pg#sample-runs)
+
 We will learn to develop API's using Next.js 13. In order to learn API development we will also cover DBMS Design and Implementation in detail:
 
 1. [What is Neon](https://neon.tech/docs/introduction/about)
