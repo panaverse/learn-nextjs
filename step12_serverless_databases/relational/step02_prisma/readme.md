@@ -1,5 +1,7 @@
 # Using Prisma in Serverless
 
+[Next.js Prisma Template](https://vercel.com/templates/next.js/postgres-prisma)
+
 [Watch Learn Prisma In 60 Minutes](https://www.youtube.com/watch?v=RebA5J-rlwg)
 
 [Watch Prisma Course For Beginners - Full Prisma Tutorial CRUD, Associations...](https://www.youtube.com/watch?v=J8ObGtfy5n0)

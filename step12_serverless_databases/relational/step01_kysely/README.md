@@ -1,3 +1,5 @@
+[Starter Template](https://vercel.com/templates/next.js/postgres-kysely)
+
 ---
 name: Vercel Postgres + Kysely Next.js Starter
 slug: postgres-kysely
