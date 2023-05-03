@@ -1,6 +1,8 @@
 # Building the Future with AI Powered Apps
 
  In this step, we’ll explore the tools behind this new wave of technology and how to wield them to build mind-blowing applications.
+ 
+ [How to customize LLMs like ChatGPT with your own data and documents](https://bdtechtalks.com/2023/05/01/customize-chatgpt-llm-embeddings/)
 
  [Watch Building the Future with LLMs, LangChain, & Pinecone](https://www.youtube.com/watch?v=nMniwlGyX-c)
 
@@ -17,3 +19,5 @@
 [How to store OpenAI Embedding Vectors in a Pinecone Vector Database using Autocode](https://www.youtube.com/watch?v=tp0bQNDtLPc)
 
 [Creating a Knowledge-Based Chatbot with OpenAI Embedding API, Pinecone, and Langchain.js](https://mael.app/blog/creating-a-knowledge-based-chatbot-with-openai-embedding-api-pinecone-and-langchainjs-4mih)
+
+[How to scale LLM workloads to 20B+ with Amazon SageMaker using Hugging Face and PyTorch FSDP](https://www.philschmid.de/sagemaker-fsdp-gpt)
