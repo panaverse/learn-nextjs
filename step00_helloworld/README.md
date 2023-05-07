@@ -4,11 +4,11 @@
 
 [Download and Install VS Code](https://code.visualstudio.com/download)
 
-[Check out the Next.js 13 Installation Docs](https://beta.nextjs.org/docs/installation)
+[Check out the Next.js 13 Installation Docs](https://nextjs.org/docs/getting-started/installation)
 
 Open the Command Line and create the Typescript project by give this command:
 
-        npx create-next-app@latest --experimental-app
+        npx create-next-app@latest
 
 Change to project directory:
 
@@ -18,11 +18,10 @@ The app directory is where you define routes, create UI and colocate files such 
 
 Read the following React Documentation:
 
-[What is a React Component](https://beta.reactjs.org/learn#components)
+[React Essentials](https://nextjs.org/docs/getting-started/react-essentials)
 
-[How to Write Markup with JSX](https://beta.reactjs.org/learn#writing-markup-with-jsx)
 
-Note: Our file extension is not jsx but tsx becuase we are using
+Note: Our file extension is not jsx but tsx because we are using
 TypeScript
 
 In the app/page.tsx file delete the previous React component and replace it with the following simple hello world component:  
@@ -78,3 +77,37 @@ In my case the web app is deployed to:
 
 [Rewrite Example](https://stackoverflow.com/questions/73607646/problems-mounting-a-vercel-nextjs-project-as-a-subdirectory-of-a-different-verce)
 
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
