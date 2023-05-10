@@ -15,9 +15,11 @@ Key features:
 
 [The code for the project](https://github.com/jackblatch/OneStopShop) is available please donot copy just use it to learn.
 
-Note: Please use Vercel Postgres
+Note: Please use Vercel Postgres as your Database
 
 References:
+
+[Best UI kit for Next.js 13 | shadcn ui tutorial](https://www.youtube.com/watch?v=-UE_lWgVpes)
 
 [A Next.js 13 template for building apps with Radix UI and Tailwind CSS](https://github.com/shadcn/next-template)
 
