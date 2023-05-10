@@ -4,7 +4,7 @@ Follow this tutorial to [Build and deploy a Personal Website with Nextjs 13 and 
 
 [Demo Website](https://resume-app-omega.vercel.app)
 
-[Code](https://github.com/timeToCode-ali/resume-app)
+Here is the [Code](https://github.com/timeToCode-ali/resume-app) for the website, please do not copy but review it to learn.
 
 References:
 
