@@ -15,6 +15,8 @@ Key features:
 
 [The code for the project](https://github.com/jackblatch/OneStopShop) is available please donot copy just use it to learn.
 
+Note: Please use Vercel Postgres
+
 References:
 
 [A Next.js 13 template for building apps with Radix UI and Tailwind CSS](https://github.com/shadcn/next-template)
