@@ -3,11 +3,11 @@
 
 1. Fist of all install
 
-	npm i drizzle-orm pg
+```	npm i drizzle-orm pg
 	npm i -D @types/pg
 	npm i -D drizzle-kit
 	npm install @vercel/postgres
-
+```
 2.0 Create Postgres Database from Storage tab on vercel dashboard
 2.1 Once DB created then create table from query tab
 	
