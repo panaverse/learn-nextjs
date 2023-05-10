@@ -4,13 +4,7 @@
 
 [What is a Vector Database?](https://www.pinecone.io/learn/vector-database/)
 
-We will learn pgvector and Pinecone
-
-## PGVECTOR
-
-[pgvector](https://github.com/pgvector/pgvector)
-
-[Vercel Postgres pgvector Starter](https://vercel.com/templates/next.js/postgres-pgvector)
+We will learn Pinecone, another option is PGVector
 
 ## Pinecone
 
@@ -19,4 +13,12 @@ We will learn pgvector and Pinecone
 [Pinecone Node.js Client](https://github.com/pinecone-io/pinecone-ts-client)
 
 [Quick Start](https://docs.pinecone.io/docs/node-client)
+
+## PGVECTOR
+
+[pgvector](https://github.com/pgvector/pgvector)
+
+[Vercel Postgres pgvector Starter](https://vercel.com/templates/next.js/postgres-pgvector)
+
+
 
