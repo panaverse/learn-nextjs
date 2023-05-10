@@ -14,3 +14,13 @@ Key features:
 [The Demo](https://onestopshop.jackblatch.com/)
 
 [The code for the project](https://github.com/jackblatch/OneStopShop) is available please donot copy just use it to learn.
+
+References:
+
+[A Next.js 13 template for building apps with Radix UI and Tailwind CSS](https://github.com/shadcn/next-template)
+
+[NextJS 13 UI Game Changer: The Library for Faster, Better Development](https://www.youtube.com/watch?v=DeLHGl936Fo)
+
+[Integrate Next.js and Storybook](https://storybook.js.org/recipes/next/)
+
+[Integrate Next.js and Storybook automatically](https://storybook.js.org/blog/integrate-nextjs-and-storybook-automatically/)
