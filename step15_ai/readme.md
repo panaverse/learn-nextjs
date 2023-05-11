@@ -1,6 +1,8 @@
 # Building the Future with AI Powered Apps
 
  In this step, we’ll explore the tools behind this new wave of technology and how to wield them to build mind-blowing applications.
+
+ [The future of generative AI is niche, not generalized](https://www.technologyreview.com/2023/04/27/1072102/the-future-of-generative-ai-is-niche-not-generalized/)
  
  [How to customize LLMs like ChatGPT with your own data and documents](https://bdtechtalks.com/2023/05/01/customize-chatgpt-llm-embeddings/)
 
