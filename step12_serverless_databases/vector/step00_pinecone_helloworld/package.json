@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +13,8 @@
   "dependencies": {
     "@pinecone-database/pinecone": "^0.0.14",
     "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.2"
   }
 }
