@@ -1,4 +1,4 @@
-# Pinecone Hello World
+# Pinecone Hello World: A Vector Database for AI Applications
 
 [What is a Vector Database?](https://www.pinecone.io/learn/vector-database/)
 
@@ -26,7 +26,7 @@ Rename the file .env.example to .env and update the keys which you get from pine
 
 [Dense vs Sparse Vectors](https://www.pinecone.io/learn/dense-vector-embeddings-nlp/#dense-vs-sparse-vectors)
 
-[Follow Docs](https://docs.pinecone.io/docs/node-client)
+[Follow Docs and write index.ts](https://docs.pinecone.io/docs/node-client)
 
 
 
