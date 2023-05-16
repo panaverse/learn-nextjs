@@ -2,23 +2,19 @@
 
 ## Setup
 
-First, read [getting started with Next.js 13](https://beta.nextjs.org/docs/getting-started) and read [installing Tailwind CSS with Next.js 13](https://beta.nextjs.org/docs/styling/tailwind-css):
+First, read [getting started with Next.js 13](https://nextjs.org/docs) and read [installing Tailwind CSS with Next.js 13](https://nextjs.org/docs/app/building-your-application/styling/tailwind-css):
 
 ```bash
 npx create-next-app@latest
-# install tailwind css
-npm install -D tailwindcss postcss autoprefixer
-# create tailwind css config
-npx tailwindcss init -p
 ```
+
+You just need to select Yes when Next.js ask you to add tailwind
 
 [Follow the Official Docs of using Tailwind CSS with Next.js 13](https://beta.nextjs.org/docs/styling/tailwind-css)
 
 You will be getting errors in app/global.css file. Read [How to fix Unknown at rule `@tailwindcss(unknownAtRules)` in VS Code](https://flaviocopes.com/fix-unknown-at-rule-tailwind/) to correct this.
 
 [Install Tailwind CSS Intellisense Extension in VSCode](https://tailwindcss.com/docs/editor-setup#intelli-sense-for-vs-code)
-
-[Install Inline Fold Extension](https://marketplace.visualstudio.com/items?itemName=moalamri.inline-fold)
 
 
 Now, run the development server:
