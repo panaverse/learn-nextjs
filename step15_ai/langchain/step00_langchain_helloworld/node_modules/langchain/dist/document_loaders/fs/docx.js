@@ -1,0 +1,32 @@
+import { Document } from "../../document.js";
+import { BufferLoader } from "./buffer.js";
+export class DocxLoader extends BufferLoader {
+    constructor(filePathOrBlob) {
+        super(filePathOrBlob);
+    }
+    async parse(raw, metadata) {
+        const { extractRawText } = await DocxLoaderImports();
+        const docx = await extractRawText({
+            buffer: raw,
+        });
+        if (!docx.value)
+            return [];
+        return [
+            new Document({
+                pageContent: docx.value,
+                metadata,
+            }),
+        ];
+    }
+}
+async function DocxLoaderImports() {
+    try {
+        const { default: mod } = await import("mammoth");
+        const { extractRawText } = mod;
+        return { extractRawText };
+    }
+    catch (e) {
+        console.error(e);
+        throw new Error("Failed to load mammoth. Please install it with eg. `npm install mammoth`.");
+    }
+}

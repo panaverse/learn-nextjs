@@ -1,0 +1,40 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.parseRecordDef = void 0;
+const zod_1 = require("zod");
+const parseDef_1 = require("../parseDef");
+const string_1 = require("./string");
+function parseRecordDef(def, refs) {
+    var _a, _b, _c, _d, _e;
+    if (refs.target === "openApi3" &&
+        ((_a = def.keyType) === null || _a === void 0 ? void 0 : _a._def.typeName) === zod_1.ZodFirstPartyTypeKind.ZodEnum) {
+        return {
+            type: "object",
+            required: def.keyType._def.values,
+            properties: def.keyType._def.values.reduce((acc, key) => {
+                var _a;
+                return (Object.assign(Object.assign({}, acc), { [key]: (_a = (0, parseDef_1.parseDef)(def.valueType._def, Object.assign(Object.assign({}, refs), { currentPath: [...refs.currentPath, "properties", key] }))) !== null && _a !== void 0 ? _a : {} }));
+            }, {}),
+            additionalProperties: false,
+        };
+    }
+    const schema = {
+        type: "object",
+        additionalProperties: (_b = (0, parseDef_1.parseDef)(def.valueType._def, Object.assign(Object.assign({}, refs), { currentPath: [...refs.currentPath, "additionalProperties"] }))) !== null && _b !== void 0 ? _b : {},
+    };
+    if (refs.target === "openApi3") {
+        return schema;
+    }
+    if (((_c = def.keyType) === null || _c === void 0 ? void 0 : _c._def.typeName) === zod_1.ZodFirstPartyTypeKind.ZodString &&
+        ((_d = def.keyType._def.checks) === null || _d === void 0 ? void 0 : _d.length)) {
+        const keyType = Object.entries((0, string_1.parseStringDef)(def.keyType._def, refs)).reduce((acc, [key, value]) => (key === "type" ? acc : Object.assign(Object.assign({}, acc), { [key]: value })), {});
+        return Object.assign(Object.assign({}, schema), { propertyNames: keyType });
+    }
+    else if (((_e = def.keyType) === null || _e === void 0 ? void 0 : _e._def.typeName) === zod_1.ZodFirstPartyTypeKind.ZodEnum) {
+        return Object.assign(Object.assign({}, schema), { propertyNames: {
+                enum: def.keyType._def.values,
+            } });
+    }
+    return schema;
+}
+exports.parseRecordDef = parseRecordDef;
