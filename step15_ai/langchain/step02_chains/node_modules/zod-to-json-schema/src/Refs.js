@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getRefs = void 0;
+const Options_1 = require("./Options");
+const getRefs = (options) => {
+    const _options = (0, Options_1.getDefaultOptions)(options);
+    const currentPath = _options.name !== undefined
+        ? [..._options.basePath, _options.definitionPath, _options.name]
+        : _options.basePath;
+    return Object.assign(Object.assign({}, _options), { currentPath: currentPath, propertyPath: undefined, seen: new Map(Object.entries(_options.definitions).map(([name, def]) => [
+            def._def,
+            {
+                def: def._def,
+                path: [..._options.basePath, _options.definitionPath, name],
+                // Resolution of references will be forced even though seen, so it's ok that the schema is undefined here for now.
+                jsonSchema: undefined,
+            },
+        ])) });
+};
+exports.getRefs = getRefs;

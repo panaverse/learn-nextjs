@@ -18,6 +18,9 @@ Create a Node.js TypeScript Project.
 Rename the file .env.example to .env and update the keys which you get from [OpenAI website](https://platform.openai.com/account/api-keys)
 
 
+[Temperature](https://gptforwork.com/guides/openai-gpt3-temperature)
+
+
 
 References:
 

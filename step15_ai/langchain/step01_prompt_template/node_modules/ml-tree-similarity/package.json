@@ -1,0 +1,47 @@
+{
+  "name": "ml-tree-similarity",
+  "version": "1.0.0",
+  "description": "Compares two spectra using a tree similarity",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "compile": "rollup -c",
+    "eslint": "eslint src",
+    "eslint-fix": "npm run eslint -- --fix",
+    "prepublishOnly": "npm run compile",
+    "test": "npm run test-coverage && npm run eslint",
+    "test-only": "jest",
+    "test-coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mljs/tree-similarity.git"
+  },
+  "keywords": [],
+  "author": "Miguel Asencio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mljs/tree-similarity/issues"
+  },
+  "homepage": "https://github.com/mljs/tree-similarity#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
+    "eslint": "^6.0.1",
+    "eslint-config-cheminfo": "^1.20.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jest": "^22.7.1",
+    "jest": "^24.8.0",
+    "rollup": "^1.16.3"
+  },
+  "dependencies": {
+    "binary-search": "^1.3.5",
+    "num-sort": "^2.0.0"
+  }
+}

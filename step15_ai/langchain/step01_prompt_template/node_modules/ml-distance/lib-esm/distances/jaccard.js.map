@@ -1,0 +1,1 @@
+{"version":3,"file":"jaccard.js","sourceRoot":"","sources":["../../src/distances/jaccard.ts"],"names":[],"mappings":"AAEA,OAAO,eAAe,MAAM,iCAAiC,CAAC;AAC9D;;;;;;GAMG;AACH,MAAM,CAAC,OAAO,UAAU,OAAO,CAAC,CAAc,EAAE,CAAc;IAC5D,OAAO,CAAC,GAAG,eAAe,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;AACnC,CAAC"}
