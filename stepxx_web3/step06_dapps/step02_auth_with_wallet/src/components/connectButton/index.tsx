@@ -5,8 +5,6 @@ import { getZeroDevSigner, getSocialWalletOwner, ZeroDevSigner } from '@zerodeva
 import {
   SocialWallet,
 } from '@zerodevapp/social-wallet';
-import { CurrentToken, getUserClient } from '@/utils/localStorage';
-
 
 
 declare global {
@@ -15,14 +13,14 @@ declare global {
   }
 }
 
-function ConnectButton() {
+interface PropType {
+  user: any;
+}
 
-  const user = getUserClient();
+function ConnectButton({user}: PropType) {
 
-  console.log("user ", user)
-
-  const [address, setAddress] = useState(user?.publicAddress)
-  const [loading, setLoading] = useState(false)
+  const [address, setAddress] = useState(user?.publicAddress);
+  const [loading, setLoading] = useState(false);
 
   const socialWallet = useMemo(() => {
     return new SocialWallet()
@@ -60,15 +58,16 @@ function ConnectButton() {
   };
 
   const signUpFlow = async (address: string) => {
-    // try {
+    let nonce;
+    try {
       const user = await fetchUser(address)
-      if(user.nonce){
-        return user.nonce;
-      }
+      nonce = user.nonce;
+    }
+    catch(err){
       const newUser = await signUp(address)
-      console.log('newUser ', newUser)
-      return newUser.user.nonce
-    // }
+      nonce = newUser.user.nonce
+    }
+    return nonce;
   };
 
   const createWallet = async () => {
@@ -91,14 +90,11 @@ function ConnectButton() {
         }
         const message = `My App Auth Service Signing nonce: ${nonce}`;
         let signature = await signer.signMessage(message)
-
+        
+        console.log("signature ", signature)
         alert(`Your signed message: ${signature}`)
 
-        const token = await login(userAddress, signature)
-
-        new CurrentToken().set({token: token.data});
-
-        setAddress(userAddress)
+        await login(userAddress, signature)
 
         setAddress(userAddress)
       }
@@ -122,7 +118,6 @@ function ConnectButton() {
 
   const disconnect = async () => {
     await socialWallet.disconnect();
-    new CurrentToken().remove();
     await logout()
     setAddress('')
   }
