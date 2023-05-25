@@ -9,6 +9,6 @@ The Hackathon challenge:
 5. Use React-hot-toast library to adds beautiful notifications
 6. Use react icons to add icons
 
-Note: We are using Sanity in order to support [Visual Editing](https://www.sanity.io/docs/vercel-visual-editing) 
+Note: We are using Sanity in order to support [Visual Editing](https://www.sanity.io/docs/vercel-visual-editing). You can learn more about visual editing by reading this [blog post](https://www.sanity.io/blog/visual-editing-sanity-vercel).
 
 
