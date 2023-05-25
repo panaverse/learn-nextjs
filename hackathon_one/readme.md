@@ -12,4 +12,8 @@ The Hackathon challenge:
 
 Note: We are using Sanity in order to support [Visual Editing](https://www.sanity.io/docs/vercel-visual-editing). You can learn more about visual editing by reading this [blog post](https://www.sanity.io/blog/visual-editing-sanity-vercel).
 
+## Advanced Features
+
+Once implementing the above basic functionality, you will add user signin and signup fuctionality i.e. and user management module. In addition, you will add a admin panel from where the admin can do Order Fulfillment, Manage Inventory, etc. 
+
 
