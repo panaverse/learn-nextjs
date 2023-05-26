@@ -16,6 +16,8 @@ Edit components/MyCard.tsx
 
 Edit src/app/page.tsx
 
+## Note: Use Shadcn UI as a starting point. Then build your own. 
+
 
 
 
