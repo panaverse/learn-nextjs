@@ -22,4 +22,10 @@ https://github.com/mkdeveloper/Hackathon-with-shadcn-ui
 
 Once implementing the above basic functionality, you will add user signin and signup fuctionality i.e. and user management module. In addition, you will add a admin panel from where the admin can do Order Fulfillment, Manage Inventory, etc. 
 
+References:
+
+[Shadcn UI Learning Steps](https://github.com/panaverse/learn-nextjs/tree/main/step07_styling/tailwindCSS/step12_shadcn_ui/)
+
+[Sanity Learning Steps](https://github.com/panaverse/learn-nextjs/tree/main/step09_headless_cms/sanity)
+
 
