@@ -1,4 +1,4 @@
-[Read Introduction](https://ui.shadcn.com/doc)
+[Read Introduction](https://ui.shadcn.com/docs)
 
     npx create-next-app@latest
 
