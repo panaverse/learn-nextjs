@@ -1,3 +1,5 @@
+To understand why we are using Shadcb UI watch [CSS in 2023 - Tailwind vs MUI vs Bootstrap vs Chakra vs...](https://www.youtube.com/watch?v=CQuTF-bkOgc). Go to time 4 min and see the diagram. We want to to be at the intersection of all three circles. 
+
 [Read Introduction](https://ui.shadcn.com/docs)
 
     npx create-next-app@latest
