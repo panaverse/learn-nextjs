@@ -9,9 +9,8 @@ To understand why we are using Shadcb UI watch [CSS in 2023 - Tailwind vs MUI vs
     Note: Replace the content array in tailwind.config.js
     
     content: [
-    	'./src/pages/**/*.{ts,tsx}',
+    	'./src/**/*.{ts,tsx}',
     	'./components/**/*.{ts,tsx}',
-    	'./src/app/**/*.{ts,tsx}',
     ],
 
     npx shadcn-ui add card
