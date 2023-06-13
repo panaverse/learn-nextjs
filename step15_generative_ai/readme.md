@@ -16,6 +16,7 @@
 
 [GPT-4 & LangChain Tutorial: How to Chat With A 56-Page PDF Document](https://www.linkedin.com/posts/lisa-chin-mollica-ba024223_gpt-4-langchain-tutorial-how-to-chat-with-activity-7046100655039475713-6CuF/?originalSubdomain=pf)
 
+
 [Interacting With a Long PDFs With Langchain, Pinecone and GPT-4](https://www.nextbigfuture.com/2023/04/interacting-with-a-long-pdfs-with-langchain-pinecone-and-gpt-4.html)
 
 [Building an Image Recognition App in Javascript using Pinecone, Hugging Face, and Vercel](https://dev.to/rschwabco/building-an-image-recognition-app-in-javascript-using-pinecone-hugging-face-and-vercel-2b0p)
@@ -25,3 +26,5 @@
 [Creating a Knowledge-Based Chatbot with OpenAI Embedding API, Pinecone, and Langchain.js](https://mael.app/blog/creating-a-knowledge-based-chatbot-with-openai-embedding-api-pinecone-and-langchainjs-4mih)
 
 [How to scale LLM workloads to 20B+ with Amazon SageMaker using Hugging Face and PyTorch FSDP](https://www.philschmid.de/sagemaker-fsdp-gpt)
+
+## [10 Exciting Project Ideas Using Large Language Models (LLMs) for Your Portfolio](https://towardsdatascience.com/10-exciting-project-ideas-using-large-language-models-llms-for-your-portfolio-970b7ab4cf9e)
