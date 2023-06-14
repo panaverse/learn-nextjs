@@ -4,6 +4,10 @@
 
  [Introduction to Generative AI](https://www.youtube.com/watch?v=G2fqAlgmoPo)
 
+ [Understanding LLMOps: Large Language Model Operations](https://wandb.ai/iamleonie/Articles/reports/Understanding-LLMOps-Large-Language-Model-Operations--Vmlldzo0MDgyMDc2)
+
+ [Four Approaches to build on top of Generative AI Foundational Models](https://www.linkedin.com/pulse/four-approaches-build-top-generative-ai-foundational-lakshmanan/)
+
  [The future of generative AI is niche, not generalized](https://www.technologyreview.com/2023/04/27/1072102/the-future-of-generative-ai-is-niche-not-generalized/)
  
  [How to customize LLMs like ChatGPT with your own data and documents](https://bdtechtalks.com/2023/05/01/customize-chatgpt-llm-embeddings/)
