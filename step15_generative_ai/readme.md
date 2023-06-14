@@ -31,4 +31,6 @@
 
 [How to scale LLM workloads to 20B+ with Amazon SageMaker using Hugging Face and PyTorch FSDP](https://www.philschmid.de/sagemaker-fsdp-gpt)
 
+## [Generative AI Google Courses](https://cloud.google.com/blog/topics/training-certifications/new-google-cloud-generative-ai-training-resources)
+
 ## [10 Exciting Project Ideas Using Large Language Models (LLMs) for Your Portfolio](https://towardsdatascience.com/10-exciting-project-ideas-using-large-language-models-llms-for-your-portfolio-970b7ab4cf9e)
