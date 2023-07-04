@@ -4,6 +4,8 @@
 
 [Getting Started](https://www.radix-ui.com/docs/primitives/overview/getting-started)
 
+[Radix ui tutorial in urdu](https://youtu.be/sNcDbrCSmeY)
+
 [Enhance Your DX with Radix: A Customizable and A11y-Friendly React Component Library](https://blog.bitsrc.io/enhance-your-dx-with-radix-a-customizable-and-a11y-friendly-react-component-library-91ddfcfef1c9)
 
 [Twitter UI with Next JS, Tailwind CSS and Radix UI](https://www.youtube.com/watch?v=HNmc3jzsQwg)

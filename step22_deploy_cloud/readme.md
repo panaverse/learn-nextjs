@@ -1,0 +1,1 @@
+[Deploy a NEXT.js app for FREE on AWS with SST](https://dev.to/kumo/deploy-a-nextjs-app-for-free-on-aws-with-sst-3g28)

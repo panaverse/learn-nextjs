@@ -4,6 +4,13 @@
 
  [Introduction to Generative AI](https://www.youtube.com/watch?v=G2fqAlgmoPo)
 
+ [LangChain: The Trendiest Web Framework of 2023, Thanks to AI
+](https://thenewstack.io/langchain-the-trendiest-web-framework-of-2023-thanks-to-ai/)
+
+ [How to customize LLMs like ChatGPT with your own data and documents](https://bdtechtalks.com/2023/05/01/customize-chatgpt-llm-embeddings/)
+
+ [Building the Future with LLMs, LangChain, & Pinecone](https://www.youtube.com/watch?v=nMniwlGyX-c)
+
  [Understanding LLMOps: Large Language Model Operations](https://wandb.ai/iamleonie/Articles/reports/Understanding-LLMOps-Large-Language-Model-Operations--Vmlldzo0MDgyMDc2)
 
  [Four Approaches to build on top of Generative AI Foundational Models](https://www.linkedin.com/pulse/four-approaches-build-top-generative-ai-foundational-lakshmanan/)
