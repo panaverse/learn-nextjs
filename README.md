@@ -6,12 +6,9 @@ Next.js Conf Keynote Announcing Version 13 :
 
 [The Future of the Web: From Cloud to Edge](https://www.youtube.com/watch?v=HlXLVb3QCvQ)
 
-
-### [Next.js 13 Beta Docs](https://beta.nextjs.org/docs/getting-started)
+### [Next.js 13 Docs](https://nextjs.org/docs)
 
 Before going forward check out this [directory of headless ecommerce stores that excel at both Design and Performance]. Also check out the [tools they are using](https://theheadlessclub.com/tools)
-
-
 
 The stack used in this learning repo, it is a mixture of [Jamstack](https://jamstack.org/) and [T3](https://create.t3.gg/) Stacks:
 [TypeScript](https://www.typescriptlang.org/),
