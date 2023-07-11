@@ -31,7 +31,9 @@ In the app/page.tsx file delete the previous React component and replace it with
 
 ```jsx
 export default function Home() {
-  return <div>Hello World</div>;
+  return (
+        <div>Hello World</div>
+  );
 }
 ```
 
@@ -43,6 +45,8 @@ We wrote a very simple hello world React component in the file. Note that it is 
 npm run dev
 ```
 
+**Open [http://localhost:3000](http://localhost:3000) with your browser to see the results locally.**
+
 The page auto-updates as you edit the file.
 
 Note that the development server created a layout.tsx file by itself even if you delete it. This means the Next.js requires that there must be RootLayout component in the app folder for the app to function.
@@ -53,7 +57,6 @@ The file app/layout.tsx is used to define UI that is shared across multiple page
 
 The file app/page.tsx is used to define the unique UI of a route. Pages represent the leaf of the route and are needed for the path to be accessible.
 
-**Open [http://localhost:3000](http://localhost:3000) with your browser to see the results locally.**
 
 ## Manual Deployment through [CLI](https://vercel.com/cli)
 
