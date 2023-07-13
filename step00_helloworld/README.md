@@ -6,17 +6,15 @@
 
 [Check out the Next.js 13 Installation Docs](https://nextjs.org/docs/getting-started/installation)
 
-Open the Command Line (Terminal) and create the NextJs project by give this command:
+1. **Create a new Folder**
+
+1. **Open the Command Line (Terminal) and run this command:**
 
 ```bash
-npx create-next-app project-name
+npx create-next-app .
 ```
 
-Change to project directory:
-
-```bash
-cd project-name
-```
+this will create a Next.Js project
 
 The app directory is where you define routes, create UI and colocate files such as components, tests, or stylesheets.
 
@@ -27,7 +25,7 @@ Read the following React Documentation:
 Note: Our file extension is not jsx but tsx because we are using
 TypeScript
 
-In the app/page.tsx file delete the previous React component and replace it with the following simple hello world component:
+3. In the app/page.tsx file delete the previous React component and replace it with the following simple hello world component:
 
 ```jsx
 export default function Home() {
@@ -39,13 +37,13 @@ export default function Home() {
 
 We wrote a very simple hello world React component in the file. Note that it is a convention in Next.js that the html page in the director is called page.tsx
 
-**Start the development Server:**
+4. **Start the development Server:**
 
 ```bash
 npm run dev
 ```
 
-**Open [http://localhost:3000](http://localhost:3000) with your browser to see the results locally.**
+5. **Open [http://localhost:3000](http://localhost:3000) with your browser to see the results locally.**
 
 The page auto-updates as you edit the file.
 
