@@ -1,4 +1,4 @@
-# Login Authentication with Next.js, JOSE, and JWT
+# Authentication with Next.js, JOSE, and JWT
 This guide will walk you through the process of setting up login authentication using Next.js, the JOSE library for JWT verification, and JSON Web Tokens (JWT) to represent user sessions.
 
 ## What is JWT?
