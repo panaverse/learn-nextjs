@@ -26,5 +26,5 @@ export const POST = async (request: NextRequest) => {
     return NextResponse.json({ message: "Login success" });
   }
 
-  return NextResponse.json({ message: "Hello World!" });
+  return NextResponse.json({ message: "Invalid Email or password" });
 };
