@@ -7,5 +7,3 @@ Contentful is the platform where you can update the content of your website, a m
 [Understand the Concepts](https://www.contentful.com/developers/docs/concepts/)
 
 [Developer Docs](https://www.contentful.com/developers/docs/)
-
-

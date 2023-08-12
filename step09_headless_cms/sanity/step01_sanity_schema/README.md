@@ -12,6 +12,7 @@ Let's make a studio that can hold a collection of pets, starting with recording 
 1. Head over to the `/sanity` folder 
 2. Create a new file inside of the `sanity` folder and call it `pet.ts`
 3. Open `pet.ts` and add the following code to it.
+
 ```typescript
 // sanity/pet.ts
 export default {
