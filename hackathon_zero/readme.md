@@ -1,4 +1,4 @@
-Photo Album Next.js Tutorial (with Server Actions, Cloudinary, Shadcn)
+# Hackathon Zero for Photo Album Next.js Tutorial (with Server Actions, Cloudinary, Shadcn)
 
 https://www.youtube.com/watch?v=MC6D4vylKTc
 
