@@ -64,6 +64,18 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 npm i -g vercel
 ```
 
+Now go to the Next.js project directory and give the following command to logout others account:
+
+```bash
+vercel logout
+```
+
+Now give the following command to login in to your own vercel account:
+
+```bash
+vercel login
+```
+
 Now go to the Next.js project directory and give the following command to deploy to cloud:
 
 ```bash
