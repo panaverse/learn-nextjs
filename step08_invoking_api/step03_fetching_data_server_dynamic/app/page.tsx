@@ -12,6 +12,7 @@ async function getData() {
   return res.json();
 }
 
+
 export default async function Home() {
   const quote = await getData();
 
