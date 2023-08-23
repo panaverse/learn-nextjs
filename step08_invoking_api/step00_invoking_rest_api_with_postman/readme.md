@@ -2,9 +2,9 @@
 
 ## [We will be doing Introduction to Postman course using Simple Books REST APIs](https://github.com/vdespa/introduction-to-postman-course)
 
-[Understanding the Basics of REST APIs](https://www.astera.com/type/blog/rest-api-definition/)
-
 [Download and install the Postman App](https://www.postman.com/downloads/)
+
+[Understanding the Basics of REST APIs](https://www.astera.com/type/blog/rest-api-definition/)
 
 [Sending your first request](https://learning.postman.com/docs/getting-started/sending-the-first-request/)
 
