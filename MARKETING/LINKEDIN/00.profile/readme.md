@@ -1,4 +1,4 @@
-LinkedIn Profile
+# Create LinkedIn Profile
 
 All students are required to create their profile on LinkedIn and share it on our Whatsapp groups and Facebook.
 
