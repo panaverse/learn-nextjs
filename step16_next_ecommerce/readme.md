@@ -6,7 +6,7 @@ https://github.com/vercel/commerce
 
 https://www.shopify.com/partners 
 
-Create Shopify store with shopify partners account. get API credential from it. Use these credentials in environmental variables. Deploy commerce2.0 theme on vercel with these credentials
+Create Shopify store with shopify partners account. get API credential from it. Use these credentials in environmental variables. Deploy commerce 2.0 theme on vercel with these credentials
 
 Understand Code From the Repo
 
