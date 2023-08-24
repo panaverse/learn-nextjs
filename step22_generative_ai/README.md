@@ -1,4 +1,4 @@
-# PIAIC Generative AI
+# PIAIC Generative-AI
 
 Welcome to the PIAIC Generative AI course! In this course, you will delve into the fascinating world of Generative Artificial Intelligence (AI) and learn how to harness the power of various Language Model (LM) variants like ChatGPT, Llamav2, Falcon, Med-Palm2, and more. You will discover how to create intelligent applications using these models and even build your own smart knowledge bot by leveraging embedding and fine-tuning concepts.
 
