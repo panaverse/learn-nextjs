@@ -3,6 +3,8 @@ To understand why we are using Shadcb UI watch [CSS in 2023 - Tailwind vs MUI vs
 [Read Introduction](https://ui.shadcn.com/docs)
 
 [Watch Video](https://www.youtube.com/watch?v=Ix8KjJxbh2E)
+
+[Also read](https://www.dhiwise.com/post/shadcn-ui-an-exciting-journey)
    
     npx create-next-app@latest
    
