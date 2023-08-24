@@ -18,6 +18,8 @@ Going forward Zia Khan will also sit with all of you and review your profiles an
 
 Soon we will also release a video from Hamza.
 
+<img src="search.jpeg" width="75%">
+
 References:
 
 https://edu.gcfglobal.org/en/linkedin/creating-your-linkedin-profile/1/
