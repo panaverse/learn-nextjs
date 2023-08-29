@@ -6,6 +6,8 @@ Hamza our star faculty member has created an excellent profile please review it 
 
 https://www.linkedin.com/in/webdeveloper-react-jamstack-expert/
 
+Watch the [YouTube Tutorial by Hamza](https://www.youtube.com/watch?v=jWJ8COA98U4)
+
 Note that the profile specifically makes it obvious that he is selling services. He has been successful in getting customers from LinkedIn.
 
 Once you have created your profile follow Zia Khan profile:
@@ -15,8 +17,6 @@ https://www.linkedin.com/in/ziaukhan/
 Make sure you don't copy Hamza profile, otherwise we will loose our edge with duplicate profiles. 
 
 Going forward Zia Khan will also sit with all of you and review your profiles and improve them. 
-
-Soon we will also release a video from Hamza.
 
 <img src="search.jpeg" width="75%">
 
