@@ -14,7 +14,7 @@ Read this article and uou may choose from these twelve:
 https://www.chargebee.com/blog/headless-ecommerce-platforms/
 
 
-# Join One (Only one you have decided to build) of the Following Discussion Groups
+## Join One (Only one you have decided to build) of the Following Discussion Groups
 
 Shopify Storefront Discussion Group
 
