@@ -1,4 +1,4 @@
-# First Headless Ecommerce Template Project
+# First Headless Ecommerce Commercial Template Project
 
 All Q3 students will start working on E-commerce Templates by forking the following Vercel Next.js project:
 
