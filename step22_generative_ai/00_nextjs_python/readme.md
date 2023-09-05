@@ -3,6 +3,8 @@
 
 https://github.com/wpcodevo/nextjs-flask-framework
 
+https://vercel.com/templates/python/flask-hello-world
+
 https://vercel.com/docs/functions/serverless-functions/runtimes/python
 
 https://codevoweb.com/how-to-integrate-flask-framework-with-nextjs/#google_vignette
