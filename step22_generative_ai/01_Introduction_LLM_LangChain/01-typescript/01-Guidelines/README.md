@@ -19,9 +19,9 @@
 ```
 OPENAI_API_KEY="<OPEN_KEYS_PASTE_HERE>"
 ```
-3. create `index.ts` file write below code:
+3. create `app.ts` file write below code:
 ```
- import { OpenAI } from "langchain";
+ import { OpenAI } from "langchain/llms/openai";
  import 'dotenv/config';
 
 //  console.log(process.env.OPENAI_API_KEY);
