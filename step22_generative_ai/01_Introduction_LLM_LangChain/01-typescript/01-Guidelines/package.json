@@ -1,0 +1,16 @@
+{
+  "name": "01-guidelines",
+  "version": "1.0.0",
+  "description": "1. install required packages     * `npm install -S langchain`     * `npm i dotenv`     * `npm i --save-dev @types/node` 2. `tsc --init`     * open `tsconfig.json` file and update     ```     {     \"compilerOptions\": {         ...         \"target\": \"ES2017\", // or higher         \"module\": \"nodenext\",     }     }     ```",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "langchain": "^0.0.150"
+  }
+}

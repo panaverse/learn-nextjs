@@ -19,9 +19,9 @@
 ```
 OPENAI_API_KEY="<OPEN_KEYS_PASTE_HERE>"
 ```
-3. create `app.ts` file write below code:
+3. create `index.ts` file write below code:
 ```
- import { OpenAI } from "langchain/llms/openai";
+ import { OpenAI } from "langchain";
  import 'dotenv/config';
 
 //  console.log(process.env.OPENAI_API_KEY);
@@ -534,3 +534,230 @@ Tell me about AeroGlide UltraSlim Smart Toothbrush by Boie
 #### A note about the backslash
 - In the course, we are using a backslash `\` to make the text fit on the screen without inserting newline '\n' characters.
 - GPT-3 isn't really affected whether you insert newline characters or not.  But when working with LLMs in general, you may consider whether newline characters in your prompt may affect the model's performance
+
+-----
+# 02 Jupiter Model
+
+```
+import { OpenAI } from "langchain/llms/openai";
+import 'dotenv/config';
+
+//  console.log(process.env.OPENAI_API_KEY);
+
+const llm = new OpenAI({
+    openAIApiKey: process.env.OPENAI_API_KEY,
+    temperature: 0.9,
+});
+
+
+async function main(prompt:string) {
+    
+    const result = await llm.predict(`${prompt}`);
+    // Handle the result...
+    console.log(result)
+}
+
+const text = `
+OVERVIEW
+- Part of a beautiful family of mid-century inspired office furniture, 
+including filing cabinets, desks, bookcases, meeting tables, and more.
+- Several options of shell color and base finishes.
+- Available with plastic back and front upholstery (SWC-100) 
+or full upholstery (SWC-110) in 10 fabric and 6 leather options.
+- Base finish options are: stainless steel, matte black, 
+gloss white, or chrome.
+- Chair is available with or without armrests.
+- Suitable for home or business settings.
+- Qualified for contract use.
+
+CONSTRUCTION
+- 5-wheel plastic coated aluminum base.
+- Pneumatic chair adjust for easy raise/lower action.
+
+DIMENSIONS
+- WIDTH 53 CM | 20.87”
+- DEPTH 51 CM | 20.08”
+- HEIGHT 80 CM | 31.50”
+- SEAT HEIGHT 44 CM | 17.32”
+- SEAT DEPTH 41 CM | 16.14”
+
+OPTIONS
+- Soft or hard-floor caster options.
+- Two choices of seat foam densities: 
+ medium (1.8 lb/ft3) or high (2.8 lb/ft3)
+- Armless or 8 position PU armrests 
+
+MATERIALS
+SHELL BASE GLIDER
+- Cast Aluminum with modified nylon PA6/PA66 coating.
+- Shell thickness: 10 mm.
+SEAT
+- HD36 foam
+
+COUNTRY OF ORIGIN
+- Italy
+`
+const prompt = `
+fact_sheet_chair = """
+OVERVIEW
+- Part of a beautiful family of mid-century inspired office furniture, 
+including filing cabinets, desks, bookcases, meeting tables, and more.
+- Several options of shell color and base finishes.
+- Available with plastic back and front upholstery (SWC-100) 
+or full upholstery (SWC-110) in 10 fabric and 6 leather options.
+- Base finish options are: stainless steel, matte black, 
+gloss white, or chrome.
+- Chair is available with or without armrests.
+- Suitable for home or business settings.
+- Qualified for contract use.
+
+CONSTRUCTION
+- 5-wheel plastic coated aluminum base.
+- Pneumatic chair adjust for easy raise/lower action.
+
+DIMENSIONS
+- WIDTH 53 CM | 20.87”
+- DEPTH 51 CM | 20.08”
+- HEIGHT 80 CM | 31.50”
+- SEAT HEIGHT 44 CM | 17.32”
+- SEAT DEPTH 41 CM | 16.14”
+
+OPTIONS
+- Soft or hard-floor caster options.
+- Two choices of seat foam densities: 
+ medium (1.8 lb/ft3) or high (2.8 lb/ft3)
+- Armless or 8 position PU armrests 
+
+MATERIALS
+SHELL BASE GLIDER
+- Cast Aluminum with modified nylon PA6/PA66 coating.
+- Shell thickness: 10 mm.
+SEAT
+- HD36 foam
+
+COUNTRY OF ORIGIN
+- Italy
+Text:
+"""${text}"""
+`
+main(prompt);
+```
+
+
+### Output
+
+```This fact sheet is for a mid-century inspired chair. It is available in several options of shell color and base finishes, and with or without armrests. It has a 5-wheel plastic coated aluminum base and pneumatic chair adjust for easy raise/lower action. It also has two choices of seat foam densities (medium or high) and several caster options (soft or hard-floor). The shell base glider is made of cast aluminum with modified nylon PA6/PA66 coating, and the seat is made of HD36 foam. It is suitable for home or business settings and is qualified for contract use. It is made in Italy.```
+
+
+# Description needs a table of dimensions
+
+```
+import { OpenAI } from "langchain/llms/openai";
+import 'dotenv/config';
+
+//  console.log(process.env.OPENAI_API_KEY);
+
+const llm = new OpenAI({
+    openAIApiKey: process.env.OPENAI_API_KEY,
+    temperature: 0.9,
+});
+
+
+async function main(prompt:string) {
+    
+    const result = await llm.predict(`${prompt}`);
+    // Handle the result...
+    console.log(result)
+}
+
+const text = `
+OVERVIEW
+- Part of a beautiful family of mid-century inspired office furniture, 
+including filing cabinets, desks, bookcases, meeting tables, and more.
+- Several options of shell color and base finishes.
+- Available with plastic back and front upholstery (SWC-100) 
+or full upholstery (SWC-110) in 10 fabric and 6 leather options.
+- Base finish options are: stainless steel, matte black, 
+gloss white, or chrome.
+- Chair is available with or without armrests.
+- Suitable for home or business settings.
+- Qualified for contract use.
+
+CONSTRUCTION
+- 5-wheel plastic coated aluminum base.
+- Pneumatic chair adjust for easy raise/lower action.
+
+DIMENSIONS
+- WIDTH 53 CM | 20.87”
+- DEPTH 51 CM | 20.08”
+- HEIGHT 80 CM | 31.50”
+- SEAT HEIGHT 44 CM | 17.32”
+- SEAT DEPTH 41 CM | 16.14”
+
+OPTIONS
+- Soft or hard-floor caster options.
+- Two choices of seat foam densities: 
+ medium (1.8 lb/ft3) or high (2.8 lb/ft3)
+- Armless or 8 position PU armrests 
+
+MATERIALS
+SHELL BASE GLIDER
+- Cast Aluminum with modified nylon PA6/PA66 coating.
+- Shell thickness: 10 mm.
+SEAT
+- HD36 foam
+
+COUNTRY OF ORIGIN
+- Italy
+`
+
+const prompt = `
+Your task is to help a marketing team create a 
+description for a retail website of a product based 
+on a technical fact sheet.
+
+Write a product description based on the information 
+provided in the technical specifications delimited by 
+triple qoutes.
+
+The description is intended for furniture retailers, 
+so should be technical in nature and focus on the 
+materials the product is constructed from.
+
+At the end of the description, include every 7-character 
+Product ID in the technical specification.
+
+After the description, include a table that gives the 
+product's dimensions. The table should have two columns.
+In the first column include the name of the dimension. 
+In the second column include the measurements in inches only.
+
+Give the table the title 'Product Dimensions'.
+
+Format everything as HTML that can be used in a website. 
+Place the description in a  element.
+
+Technical specifications:
+Text:
+"""${text}"""
+`
+main(prompt);
+```
+
+### Output
+
+```
+
+<p>Introducing the stylish and comfortable SWC-100 & SWC-110 mid-century inspired office chairs. Constructed from a 5-wheel plastic coated aluminum base and HD36 foam seat, these chairs are suitable for home or business settings. The base finish is available in stainless steel, matte black, gloss white, or chrome, while the back and front upholstery is available in 10 fabric and 6 leather options. The chair is also available with or without armrests, and with soft or hard-floor caster options. With two choices of seat foam densities, medium (1.8 lb/ft3) or high (2.8 lb/ft3) and 8 position PU armrests, this chair is the perfect addition to any interior. The Product ID for this chair are: SWC-100 and SWC-110.</p>
+
+
+<table>
+	<caption>Product Dimensions</caption>
+    <tr>
+        <th>Dimension</th>
+        <th>Measurement (in)</th>
+    </tr>
+    <tr>
+    	<td>Width</td>
+        <td>20.87</td>
+```
