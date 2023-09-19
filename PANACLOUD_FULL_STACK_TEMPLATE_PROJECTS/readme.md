@@ -1,4 +1,110 @@
-# Full-Stack Templates 
+# PANACLOUD HEADLESS B2C AND B2B ECOMMERCE DIVISION
+
+We are starting a new headless e-commerce division of Panacloud, which will have developers all over Pakistan. This division will be developing products for sale: Full Stack Headless Ecommerce Templates which will sold on Theme Forest and Panaverse Ownership Economy Marketplace.
+
+Business Model: 70% for developers and designers
+
+Soon we will be start Zoom sessions of Panacloud Headless Ecommerce Zoom Sessions. 
+
+
+Here are the details about the community leaders and community groups and Study Material:
+
+What is Headless Ecommerce:
+https://www.shopify.com/enterprise/headless-commerce
+
+https://acowebs.com/traditional-vs-headless-ecommerce/
+
+What is B2B and B2C model of eCommerce?
+B2B ecommerce utilises online platforms to sell products or services to other businesses. B2C ecommerce targets personal consumers. A company that sells office furniture, software, or paper to other businesses would be an example of a B2B company. B2B ecommerce tends to be more complex than B2C ecommerce.
+
+https://www.salesforce.com/eu/blog/2021/11/b2b-vs-b2c-ecommerce-difference.html
+
+https://hygraph.com/resources/headless-commerce-b2b-b2c-whitepaper
+
+Base Next.js Framework:
+
+https://vercel.com/templates/next.js/nextjs-commerce
+
+For now we will start with three vertical solutions:
+
+
+## I. Headless Shopify Learning Group:
+
+https://chat.whatsapp.com/DFm0KDfUjym6ov8OBzGUI2
+
+1. Ayisha from Islamabad (Project Manager)
++92 303 5110750
+
+2. Kubabib from Peshawar (Developer)
++92 332 9100262
+
+https://www.linkedin.com/in/mk-software-engineer
+
+Study Material:
+
+https://www.shopify.com/plus/solutions/headless-commerce
+
+https://vercel.com/templates/next.js/nextjs-commerce
+
+
+## II. Headless Woocommerce Learning Group:
+
+https://chat.whatsapp.com/HQr3jwEY6MjEmSLVnAWsFQ
+
+Syed Hamza Gilani from Multan/Islamabad (Project Manager and Developer)
++92 300 0870844
+
+https://www.linkedin.com/in/syedhamzagilani/ 
+
+Study Material:
+
+https://www.youtube.com/watch?v=tnm-nOGygRw
+
+https://www.youtube.com/watch?v=5RUn0dWPqS0
+
+https://dribbble.com/shots/21706225-Metashop-React-NextJS-Ecommerce-for-Headless-WooCommerce
+
+https://www.upwork.com/services/product/development-it-headless-woocommerce-website-with-next-js-1558270103950356480
+
+
+## III. Headless Salesforce B2B Commerce Cloud Learning Group:
+
+https://chat.whatsapp.com/K4vdZ9X0Tvk2bIaxcAb6CS
+
+1. Osman from Faisalabad (Project Manager)
++92 301 3949480
+
+https://www.linkedin.com/in/musmanfullstack
+
+
+2. Usman Rajput from Lahore (Developer)
++92 303 0353803
+
+https://www.linkedin.com/in/muhammad-usama-2228ba1b9/
+
+3. Anees Ahmed (Project Manager Karachi)
++92 300 8960038
+
+https://www.linkedin.com/in/aneesahmed-pk/
+
+Study Material:
+https://jmango360.com/blog/headless-commerce-b2b/
+
+https://www.royalcyber.com/blogs/ecommerce/unlock-the-power-of-headless-commerce/
+
+https://www.salesforceben.com/salesforce-headless-commerce/
+
+https://vuestorefront.io/blog/salesforce-headless-commerce
+
+https://www.youtube.com/watch?v=fqJ0FyMTs04
+
+https://www.youtube.com/watch?v=PKsAZbldNp4
+
+https://vercel.com/templates/next.js/salesforce-commerce-cloud-starter
+
+
+
+Note: We will add more community leaders we move forward. 
 
 # Standard for submitting Full Stack Templates on ThemeForest
 
