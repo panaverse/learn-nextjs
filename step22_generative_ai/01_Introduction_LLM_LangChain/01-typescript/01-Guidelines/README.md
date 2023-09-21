@@ -47,8 +47,6 @@
 
 7. Create API key from `open AI`
 
-8. Set OpenAI API Key
-
    1. Login to [Open AI](https://openai.com/)
    2. Navigate to API page
    3. Click your `profile` on the top right corner
@@ -58,20 +56,20 @@
    7. Create new secret key
    8. Save your generated key
 
-9. Create `.env` file
+8. Create `.env` file
 
    ```env
    OPENAI_API_KEY="<OPEN_KEYS_PASTE_HERE>"
    ```
 
-10. Create `.gitignore` file
+9. Create `.gitignore` file
 
-    ```gitignore
-    node_modules
-    .env
-    ```
+   ```gitignore
+   node_modules
+   .env
+   ```
 
-11. Create `app.ts` file
+10. Create `app.ts` file
 
     ```ts
     import { OpenAI } from "langchain/llms/openai";
@@ -89,19 +87,19 @@
     main();
     ```
 
-12. Transforms TypeScript code into JavaScript code
+11. Transforms TypeScript code into JavaScript code
 
     ```cmd
     tsc
     ```
 
-13. Run the app
+12. Run the app
 
     ```cmd
     node app.js
     ```
 
-14. Running this code will respond with some answer. In my case I got the following response
+13. Running this code will respond with some answer. In my case I got the following response
 
     ```cmd
     Socktastik.
