@@ -1,3 +1,11 @@
+# Study Material for the SQL Quiz
+
+https://www.interviewbit.com/sql-cheat-sheet/
+
+https://www.guru99.com/database-normalization.html (We will cover only up to 3NF)
+
+
+
 # Serverless Databases
 
 [2023 State of Databases for Serverless & Edge](https://leerob.io/blog/backend)

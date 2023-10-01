@@ -2,6 +2,20 @@
 
 The generateStaticParams server function can be used in combination with dynamic route segments to define the list of route segment parameters that will be statically generated at build time instead of on-demand.
 
+Read API Reference:
+
+[generateStaticParams](https://nextjs.org/docs/app/api-reference/functions/generate-static-params)
+
+[dynamic params config](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamicparams)
+
+Note 1: You can use the dynamicParams segment config option to control what happens when a dynamic segment is visited that was not generated with generateStaticParams.
+
+Note 2: During next dev (i.e. running on local machine), generateStaticParams will be called when you navigate to a route.
+
+Note 3: During next build, generateStaticParams runs before the corresponding Layouts or Pages are generated.
+
+Note 4: During revalidation (ISR), generateStaticParams will not be called again.
+
 This replaces getStaticPaths of Next.js 12 with a simplified API. generateStaticParams doesn't require any context parameters. It runs at build time before the corresponding Layouts or Pages are generated. It will not be called again during revalidation (ISR).
 
 The primary benefit of the generateStaticParams function in it's smart retrieval of data. If content is fetched within the generateStaticParams function using a fetch request, the requests are automatically deduped. This means a fetch request with the same arguments across multiple generateStaticParams, Layouts, and Pages will only be made once, which decreases build times.

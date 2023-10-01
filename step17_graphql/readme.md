@@ -2,6 +2,8 @@
 
 [Learn GraphQL](https://graphql.org/learn/)
 
+[Graphql Deep Dive - Video Series](https://www.youtube.com/watch?v=3NFbMpDrJEU&list=PLOfLYVXrwqXqByJIeE1ZJH9XbqRZYEE7h)
+
 [Learn GraphQL In 40 Minutes](https://www.youtube.com/watch?v=ZQL7tL2S0oQ)
 
 [Mastering Next.js 13.x with GraphQL in 60 Minute Video Tutorial: Building Modern Web Apps](https://www.youtube.com/watch?v=9G9_2a2k2Ls)
