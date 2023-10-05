@@ -6,6 +6,8 @@ Welcome to the PIAIC Generative AI course! In this course, you will delve into t
 
 [Watch the Introductory Video by Qasim](https://www.youtube.com/watch?v=A1hq4OBWSgE)
 
+## [syllabus](https://docs.google.com/document/d/1qqUy6ZBJd1ExyK_FWJt8BY-NlAFr3suBbVYYMNQ70rs/edit)
+
 ## Description
 
 Generative AI has gained significant attention in recent years due to its ability to create human-like text, art, music, and more. This course will equip you with the skills to effectively use langchain techniques with a variety of Language Model models. You'll learn how to make intelligent applications, automate content generation, and even construct your own knowledge bot that can answer queries and engage in meaningful conversations.
