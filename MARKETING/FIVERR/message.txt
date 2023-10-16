@@ -1,0 +1,30 @@
+Congrats to All our Q3 and Q2 students you are now a Modern Web Developer. But our war is just getting started. 
+
+From today today we will continue on the journey of improving our skills and also start selling the skills we have acquired:
+
+1. Upgrading our Skills: Data Science Modern Python Crash Course for WMD Q1, Q2, and Q3 Live Zoom Classes
+Time: 8:00 pm to 10:00 pm
+Days: Monday, Tuesday, Thursday, Friday, Saturday, Sunday
+Starting Today Oct 16
+Duration: 2 wks
+Complete Details:
+https://github.com/panaverse/learn-modern-python
+
+2. Product Development and Portfolio Building: Jamstack Templates
+
+Please complete these products ASAP, this will also be our portfolio which will help us sell our services:
+
+Q2 Students:
+https://github.com/panaverse/learn-nextjs/blob/main/HACKATHONS/02.hackathon_two/readme.md
+
+Q3 Students:
+https://github.com/panaverse/learn-nextjs/tree/main/PANACLOUD_FULL_STACK_TEMPLATE_PROJECTS
+
+3. Profile Building, Freelancing, and Selling
+
+3a. Complete LinkedIn Profile:
+https://github.com/panaverse/learn-nextjs/blob/main/MARKETING/LINKEDIN/00.profile/readme.md
+
+3b. Create Fiverr Seller Profile and Gigs
+Right now we will start selling our Modern Web and API development Gigs. Later we will add Data Science, Generative AI, and Web 3 skills. 
+https://github.com/panaverse/learn-nextjs/tree/main/MARKETING/FIVERR
