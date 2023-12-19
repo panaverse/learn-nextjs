@@ -1,5 +1,7 @@
 # Learn Modern Web Development using Next.js 13 in Baby Steps
 
+[Must Read: Web Development in 2023: JavaScript Still Rules, AI Emerges](https://thenewstack.io/web-development-in-2023-javascript-still-rules-ai-emerges/)
+
 Next.js Conf Keynote Announcing Version 13 :
 
 [<img src="next13.png" width="75%">](https://www.youtube.com/watch?v=NiknNI_0J48 "Keynote Next.js 13")
