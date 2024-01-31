@@ -1,0 +1,14 @@
+challenge #1 create a simple web app from scrach write your name h1 then add a paragraph tag with current date and use another paragraph with current date
+challenge #2 create a simple web app from scrach add h1 and a paragraph and a order list in which u have your 5 to 10 best movies
+challange #3 create a web app single page with navbar with your name home about service and contact
+challange #4 create a web app with on challange #3 make a dynamic and responsive web page and use material UI icons
+challenge #5 create a web app using map function with challange #4 add service like foods or clothes with list and images and details of items with price .
+challenge #6 create a web app with hello world, good morning from from 1 to 11am good afternoon from 12pm to 7pm good night from 7pm till midnight with background colour changed in every time .
+challenge #7 create a web app using challenge #6 with 3 time morning afternoon and night in components.
+challenge #8 create a app built a calculator using typescript and apply styling using next.js .
+challenge #9 create a web app using hooks show a clock and a button if u click a button or refresh u will get a time updated .
+challenge #10 create a web app create a login from get first name last name e-mail and contact no and submit and store in a database.
+challenge #11 create a web app create a center div with a number showing in it with increment and decrement button but decrement should not be less than 0 or greater than 100
+challenge #12 create a web app create a click me button with increatment no but when u click u will see title value on website tab you click me ____ times.
+challenge #13 create a web app creat a simple google aap clone page using Next.js stylling
+challange #14 create a web app fetch api from jason and display in a table form .
