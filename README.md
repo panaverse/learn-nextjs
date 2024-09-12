@@ -1,4 +1,5 @@
 # Learn Modern Web Development using Next.js 13 in Baby Steps
+# I'm learning git , that's why I forked and send a pull request.
 
 [Must Read: Web Development in 2023: JavaScript Still Rules, AI Emerges](https://thenewstack.io/web-development-in-2023-javascript-still-rules-ai-emerges/)
 
