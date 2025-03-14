@@ -8,6 +8,20 @@ We will use [useRouter() Hook](https://beta.nextjs.org/docs/api-reference/use-ro
 
 We should use the <Link> component for navigation unless you have a specific requirement for using useRouter.
 
+## Steps to follow
+Notice, in our app/page.tsx, we are using `<Link href="/name">Go to name page</Link>` to go to `name/page.tsx` and in app/name/page.tsx we are importing useRouter by `import { useRouter } from 'next/navigation'` then using useRouter hook to go to name/page/address/page.tsx. Also, dont forget to add `'use client'` on top of the file
+```
+ const router = useRouter();
+    return (
+      <div>
+            My name is Zia.
+            <br/>
+            <button type="button" onClick={() => router.push('/name/address')}>
+              Get Address
+            </button>
+      
+      </div>
+```
 
 Start the Server:
 
